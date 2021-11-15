@@ -6,11 +6,6 @@ import { Routes,Route } from 'react-router-dom';
 import Home from './Content/Home'
 const  App = () => {
   return (
-<<<<<<< HEAD
-    <div className="App">
-      
-    </div>
-=======
     <React.Fragment>
       <Header />
       <Routes>
@@ -22,7 +17,6 @@ const  App = () => {
     
      
     
->>>>>>> test
   );
 }
 
