@@ -1,8 +1,8 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import Content from "./Content"
 const Home = () =>{
     return (<React.Fragment>
-        <Carousel />
+        <Content />
     </React.Fragment>)
 }
 export default Home;
