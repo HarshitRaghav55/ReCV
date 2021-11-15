@@ -1,19 +1,22 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <React.Fragment>
             {/* Navbar */}
             <nav className="navbar navbar-expand-lg navbar-light bg-primary my-1">
                 <div className="container-fluid ">
-                    <a className="navbar-brand me-3 text-white" href="#">ReCV</a>
+                    {/* <a className="navbar-brand me-3 text-white" href="#">ReCV</a> */}
+                    <Link to = "/" className="navbar-brand me-3 text-white" >ReCV</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <a className="nav-link text-white" href="/Resume">Resume</a>
+                                {/* <a className="nav-link text-white" href="/Resume">Resume</a> */}
+                                <Link to = "/Resume" className="nav-link text-white" >Resume</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link text-white" href="#">CV</a>
