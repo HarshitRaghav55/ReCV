@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Carousel = () => {
     return (
         <React.Fragment>
+            {/*
             <div id="carousel-Resume-Cv" class="carousel slide" data-bs-ride="carousel" style="margin: 1%;">
                 <div className="carousel-inner">
                     <div class="carousel-item active" style="background-color: brown;">
@@ -24,7 +25,7 @@ const Carousel = () => {
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-
+            */}
 
         </React.Fragment>
     );
