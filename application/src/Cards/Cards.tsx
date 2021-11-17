@@ -18,7 +18,7 @@ const Cards = () => {
                                         the card's content.
                                     </Card.Text>
                                     {/* <Button variant="primary">Go somewhere</Button> */}
-                                    <Link to = "/Resume1">Resume1</Link>
+                                    <Link to = "/Resume1"><Button variant="primary">Go somewhere</Button></Link>
                                 </Card.Body>
                             </Card>
                         </Col>
