@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Container, Row, CardGroup, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Cards = () => {
     return (
@@ -16,7 +17,8 @@ const Cards = () => {
                                         Some quick example text to build on the card title and make up the bulk of
                                         the card's content.
                                     </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
+                                    {/* <Button variant="primary">Go somewhere</Button> */}
+                                    <Link to = "/Resume1">Resume1</Link>
                                 </Card.Body>
                             </Card>
                         </Col>
