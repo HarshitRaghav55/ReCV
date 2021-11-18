@@ -18,7 +18,8 @@ const Cards = () => {
                                         the card's content.
                                     </Card.Text>
                                     {/* <Button variant="primary">Go somewhere</Button> */}
-                                    <Link to = "/Resume1"><Button variant="primary">Go somewhere</Button></Link>
+                                    <Link to = "/Information"><Button variant="primary"> make resume </Button> </Link>
+                                    <Link to = "/ResumeGlaFormat"><Button variant="primary">preview</Button> </Link>
                                 </Card.Body>
                             </Card>
                         </Col>

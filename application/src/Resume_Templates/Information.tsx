@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-type Props={
-    name : any
-}
 
-const Resume1 : React.FC<Props>= (Prop:Props) => {
+
+const Information = () => {
     const [name,setName]=useState("");
     // const [email,setEmail] = useState("");
     return (
@@ -61,4 +59,4 @@ const Resume1 : React.FC<Props>= (Prop:Props) => {
         </React.Fragment>
     );
 }
-export default Resume1;
+export default Information;
