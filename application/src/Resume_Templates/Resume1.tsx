@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+type Props={
+    name : any
+}
 
-const Resume1 = () => {
+const Resume1 : React.FC<Props>= (Prop:Props) => {
+    const [name,setName]=useState("");
+    // const [email,setEmail] = useState("");
     return (
         <React.Fragment>
             <div>
                 <Form style={{margin:'1%', padding:"0.5%"}}>
                     <Form.Group className="mb-2" controlId="formGeneralInformation">
                         <Form.Label column sm={2}> Enter your Full_Name</Form.Label>
-                        <Form.Control type="text" placeholder="Enter your name"></Form.Control>
+                        <Form.Control type="text" placeholder="Enter your name" >
+                            <input type = "text"  value={name} onChange = {e => setName(e.target.value)} />
+                            </Form.Control>
                     </Form.Group>
                 </Form>
             </div>
