@@ -6,6 +6,7 @@ import { Routes,Route } from 'react-router-dom';
 import Home from './Content/Home'
 import Information from "./Resume_Templates/Information"
 import ResumeGlaFormat from "./Resume_Templates/ResumeGlaFormat"
+import InternshalaResume from "./Resume_Templates/InternshalaResume"
 const  App = () => {
   return (
     <React.Fragment>
@@ -15,6 +16,7 @@ const  App = () => {
         <Route path ="/Resume" element = {<Resume />} />
         <Route path = "/Information" element = {<Information />} />
         <Route path = "/ResumeGlaFormat" element = {<ResumeGlaFormat/>} />
+        <Route path = "/InternshalaResume" element = {<InternshalaResume/>} />
       </Routes>
         
     </React.Fragment>
