@@ -16,7 +16,7 @@ const  App = () => {
         <Route path ="/Resume" element = {<Resume />} />
         <Route path = "/Information" element = {<Information />} />
         <Route path = "/ResumeGlaFormat" element = {<ResumeGlaFormat/>} />
-        <Route path = "/InternshalaResume" element = {<InternshalaResume/>} />
+        <Route path = "/InternshalaResume" element = {<InternshalaResume name={""} email={""}/>} />
       </Routes>
         
     </React.Fragment>
