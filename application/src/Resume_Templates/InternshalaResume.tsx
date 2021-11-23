@@ -2,16 +2,22 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from "react-bootstrap";
 import styles from './appStyles.module.css'
-const InternshalaResume = () => {
+type Props = {
+    name: String,
+    email: String
+};
+const ref = React.createRef();
+const InternshalaResume = (props: Props) => {
     return (
         <React.Fragment>
+
             <Container>
-                <div className='conatiner' style={{margin:"4%"}}>
+                <div className='conatiner' style={{ margin: "4%" }}>
                     <Row className="mb-1">
                         <Col>
                             <div className='header'>
                                 <div className='name'>
-                                    <h2 style={{ textDecorationLine: 'underline', textDecorationColor: 'aquamarine' }}>HARSHIT RAGHAV</h2>
+                                    <h2 style={{ textDecorationLine: 'underline', textDecorationColor: 'aquamarine' }}>{props.name}</h2>
                                 </div>
                             </div>
                         </Col>
@@ -22,14 +28,14 @@ const InternshalaResume = () => {
                                 <p style={{ display: 'flex', justifyContent: 'right', alignItems: 'right', margin: '0' }}>Mathura</p>
                             </div>
                         </Col>
-                        <hr  style={{
-                        color: 'black',
-                        backgroundColor: 'green',
-                        height: .5,
-                        borderColor : '#000000'
-                        }}/>
+                        <hr style={{
+                            color: 'black',
+                            backgroundColor: 'green',
+                            height: .5,
+                            borderColor: '#000000'
+                        }} />
                     </Row>
-                    
+
                     <div className="information">
                         <Row>
                             <Col>
@@ -64,10 +70,10 @@ const InternshalaResume = () => {
                                 <div>
                                     <h5>Internships & Job Preparation</h5>
                                     <p>Internshala Trainings, Online</p>
-                                    <p style={{margin:'0'}}>Jun 2021-Jul 2021</p>
-                                    <p style={{margin:'1'}}>Sucessfully complete a four weeks online certified trainig on 
-                                        Internships & Job Preparation. The training consisted of Getting 
-                                        Started with the Job Hunt, Building up your Gears and Going at the 
+                                    <p style={{ margin: '0' }}>Jun 2021-Jul 2021</p>
+                                    <p style={{ margin: '1' }}>Sucessfully complete a four weeks online certified trainig on
+                                        Internships & Job Preparation. The training consisted of Getting
+                                        Started with the Job Hunt, Building up your Gears and Going at the
                                         Front Modules. In the final assessment, I scored 80% marks.
                                     </p>
                                     <h5 className="mb-5">Programming with Python</h5>
@@ -99,13 +105,15 @@ const InternshalaResume = () => {
                                         <p>Beginner</p>
                                     </Col>
                                 </Row>
-                                
+
                             </Col>
                         </Row>
                     </div>
                 </div>
             </Container >
+
         </React.Fragment >
+
     );
 }
 
