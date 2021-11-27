@@ -21,6 +21,7 @@ const Information = () => {
     const [skill, setSkill] = useState("");
     const [summary, setSummary] = useState("");
     const [extraCurricular, setExtraCurricular] = useState("");
+    // console
     // function submit (e : any){
     //     if(name == null|| email == null || education1 == null || skill == null || summary == null){
     //         alert('All * feilds are required');
