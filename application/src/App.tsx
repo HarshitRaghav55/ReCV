@@ -7,6 +7,7 @@ import Home from './Content/Home'
 import Information from "./Resume_Templates/Information"
 import ResumeGlaFormat from "./Resume_Templates/ResumeGlaFormat"
 import InternshalaResume from "./Resume_Templates/InternshalaResume"
+import Resume2_Template from "./Resume_Templates2/Resume2_Template"
 const  App = () => {
   return (
     <React.Fragment>
@@ -17,6 +18,7 @@ const  App = () => {
         <Route path = "/Information" element = {<Information />} />
         <Route path = "/ResumeGlaFormat" element = {<ResumeGlaFormat/>} />
         <Route path = "/InternshalaResume" element = {<InternshalaResume name={""} email={""}/>} />
+        <Route path = "/Resume2_Template" element = {<Resume2_Template/>}/>
       </Routes>
         
     </React.Fragment>
