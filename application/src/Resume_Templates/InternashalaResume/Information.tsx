@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import Header from '../Header/Header';
+import Header from '../../Header/Header';
 import InternshalaResume from './InternshalaResume';
 
 

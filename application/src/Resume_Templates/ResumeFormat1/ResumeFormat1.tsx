@@ -1,10 +1,9 @@
 import React from "react";
-const ResumeGlaFormat = () => {
+const ResumeFormat1 = () =>{
     return(
         <React.Fragment>
-            This is format
+            format1
         </React.Fragment>
     );
-
 }
-export default ResumeGlaFormat;
+export default ResumeFormat1;
