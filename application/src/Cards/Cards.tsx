@@ -33,7 +33,7 @@ const Cards = () => {
                                             the card's content.
                                         </Card.Text>
                                         <Link to="/Information"><Button variant="primary"> Make resume </Button> </Link>
-                                        <Link to="/InternshalaResume"><Button variant="primary" style={{ margin: "1" }}>preview</Button> </Link>
+                                        <Link to="/Preveiw"><Button variant="primary" style={{ margin: "1" }}>preview</Button> </Link>
                                     </Card.Body>
                                 </Card>
                             </Col>

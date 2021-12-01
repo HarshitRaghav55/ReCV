@@ -11,7 +11,8 @@ const Information = () => {
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [mobileNumber, setMobileNumber] = useState<number>();
+    const [mobileNumber, setMobileNumber] = useState<number>(0);
+    const [address , setAddress] = useState("");
     const [education1, setEducation1] = useState("");
     const [education2, setEducation2] = useState("");
     const [education3, setEducation3] = useState("");
@@ -74,6 +75,7 @@ const Information = () => {
                         </Form>
                     </div>
                     <div style={{ margin: '1%', padding: "0.5%" }}>
+                        
                         <Form >
                             <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                 <Form.Label style={{ color: 'darkblue' }}>EDUCATION</Form.Label>
@@ -117,7 +119,7 @@ const Information = () => {
                 </>
 
 
-                : <InternshalaResume name={name} email={email} />
+                : <InternshalaResume name={name} email={email} education1 = {education1} mobileNumber = {mobileNumber} skill = {skill} summary = {summary} extraCurricular = {extraCurricular}/>
 
             }
         </React.Fragment>
