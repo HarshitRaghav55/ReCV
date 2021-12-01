@@ -37,7 +37,9 @@ const Header = () => {
                             </li>
                             <li>
                                 <button className="btn btn-outline-light text-warning">Log-in</button>
+                                <Link to = "/SignUp" >
                                 <button className="btn btn-outline-light text-warning mx-1" >Sign-up</button>
+                            </Link>
                             </li>
                         </ul>
                     </div>

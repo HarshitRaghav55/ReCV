@@ -9,6 +9,7 @@ import ResumeFormat1 from "./Resume_Templates/ResumeFormat1/ResumeFormat1"
 import InternshalaResume from "./Resume_Templates/InternashalaResume/InternshalaResume"
 import Resume2_Template from "./Resume_Templates/Resume_Templates2/Resume2_Template"
 import CV1 from "./CV1/CV1"
+import SignUp from "./signup/SignUp"
 const  App = () => {
   return (
     <React.Fragment>
@@ -21,6 +22,7 @@ const  App = () => {
         <Route path = "/InternshalaResume" element = {<InternshalaResume name={""} email={""}/>} />
         <Route path = "/Resume2_Template" element = {<Resume2_Template/>}/>
         <Route path = "/CV1" element = {<CV1/>} />
+        <Route path = "/SignUp" element = {<SignUp />} />
       </Routes>
         
     </React.Fragment>
