@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Table, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
+import { ProgressBar } from "react-bootstrap";
 
 const Cv1_template = () => {
     return (
@@ -34,12 +35,12 @@ const Cv1_template = () => {
                                     }} />
                                     <Row>
                                         <Col xs lg="2">
-                                            <div className="date1 mt-1" style={{ backgroundColor: 'aqua' }}>
+                                            <div className="date1 mt-1">
                                                 <h6>2019-23 present</h6>
                                             </div>
                                         </Col>
                                         <Col>
-                                            <h6>PR Specialist</h6>
+                                            <h6 className="mt-1">PR Specialist</h6>
                                             TAIS Agency
                                             <ul>
                                                 <li>
@@ -57,7 +58,7 @@ const Cv1_template = () => {
                                     </Row>
                                     <Row>
                                         <Col xs lg="2">
-                                            2016-01-2019-02
+                                            <h6>2016-01-2019-02</h6>
                                         </Col>
                                         <Col>
                                             <h6>PR Specialist</h6>
@@ -102,9 +103,45 @@ const Cv1_template = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col xs lg="4">
-                            <div className="details" style={{ backgroundColor: "yellow" }}>
-                                abcdef
+                        <Col xs lg="3">
+                            <div className="details p-3" style={{ backgroundColor: "#B0A8B9" }}>
+                                <div className="Personal_Info">
+                                    <h5 style={{margin:'0'}}>Personal Info</h5>
+                                    <hr style={{
+                                        color: 'dark',
+                                        //backgroundColor: 'black',
+                                        height: 3,
+                                        fontWeight: 'bold',
+                                        margin: '0'
+                                        //borderColor: 'yellow'
+                                    }} />
+                                    <h6 className="mt-2">Address</h6>
+                                    <p style={{margin:'0'}}>65 Victor Lane</p>
+                                    <p style={{margin:'0'}}>SARON</p>
+                                    <p style={{margin:'0'}}>SA44 INY</p>
+                                    <h6 className="mt-3">Phone</h6>
+                                    <p>012345 6789</p>
+                                    <h6>E-mail</h6>
+                                    <p>abc@gmail.com</p>
+                                    <h6>Linkedin</h6>
+                                    <p>linked.com</p>
+                                    <h6>Twitter</h6>
+                                    <p>twitter.com</p>
+                                    <h5>Skills</h5>
+                                    <p style={{margin:'0'}}>Press releases</p>
+                                    <ProgressBar style={{width:'75'}} animated now={75} />
+                                    <p style={{margin:'0'}}>Brand management</p>
+                                    <ProgressBar style={{width:'75%'}} animated now={65} />
+                                    <p style={{margin:'0'}}>CMS platforms</p>
+                                    <ProgressBar style={{width:'75%'}} animated now={65} />
+                                    <p style={{margin:'0'}}>Fcaebook Marketing</p>
+                                    <ProgressBar style={{width:'75%'}} animated now={55} />
+                                    <h5 className="Languages mt-3">Languages</h5>
+                                    <p>Italian</p>
+                                    <p>Japenese</p>
+                                    <p>English</p>
+                                </div>
+
                             </div>
                         </Col>
                     </Row>
