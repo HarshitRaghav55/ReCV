@@ -11,7 +11,7 @@ const Cards = () => {
                         <Row>
                             <Col lg="4">
                                 <Card className="mb-2">
-                                    <Card.Img variant="top" src="holder.js/100px180" />
+                                
                                     <Card.Body>
                                         <Card.Title>Resume Format 1</Card.Title>
                                         <Card.Text>
@@ -25,7 +25,7 @@ const Cards = () => {
                             </Col>
                             <Col lg="4" md="6">
                                 <Card className="mb-2">
-                                    <Card.Img variant="top" src="holder.js/100px180" />
+                                
                                     <Card.Body>
                                         <Card.Title>Intershala Resume</Card.Title>
                                         <Card.Text>
@@ -39,7 +39,7 @@ const Cards = () => {
                             </Col>
                             <Col lg="4">
                                 <Card className="mb-2">
-                                    <Card.Img variant="top" src="holder.js/100px180" />
+                                
                                     <Card.Body>
                                         <Card.Title>Resume format 3</Card.Title>
                                         <Card.Text>
@@ -61,7 +61,7 @@ const Cards = () => {
                         <Row>
                             <Col lg="4">
                                 <Card className="mb-2">
-                                    <Card.Img variant="top" src="holder.js/100px180" />
+                                
                                     <Card.Body>
                                         <Card.Title>CV Format1</Card.Title>
                                         <Card.Text>
@@ -76,7 +76,7 @@ const Cards = () => {
                             </Col>
                             <Col lg="4" md="6">
                                 <Card className="mb-2">
-                                    <Card.Img variant="top" src="holder.js/100px180" />
+                                
                                     <Card.Body>
                                         <Card.Title>CV Format 2</Card.Title>
                                         <Card.Text>
@@ -90,7 +90,7 @@ const Cards = () => {
                             </Col>
                             <Col lg="4">
                                 <Card className="mb-2">
-                                    <Card.Img variant="top" src="holder.js/100px180" />
+                                
                                     <Card.Body>
                                         <Card.Title>Card Title</Card.Title>
                                         <Card.Text>
