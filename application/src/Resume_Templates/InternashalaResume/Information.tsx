@@ -55,8 +55,10 @@ const Information = () => {
                                 <Container style={{ padding: "0.5%" }}>
                                     <Row>
                                         <Col lg >
-                                            <Form.Label style={{ color: 'darkblue' }}>Enter your email</Form.Label>
-                                            <Form.Control className="mb-2" type="email" value={email} onChange={event => setEmail(event.target.value)} placeholder="Enter your e-mail address" />
+                                            <Form.Group controlId="formBasicEmail">
+                                                <Form.Label style={{ color: 'darkblue' }}>Enter your email</Form.Label>
+                                                <Form.Control className="mb-2" type="email" value={email} onChange={event => setEmail(event.target.value)} placeholder="Enter your e-mail address" />
+                                            </Form.Group>
                                         </Col>
                                         <Col lg>
                                             <Form.Label style={{ color: 'darkblue' }}>Enter your Phone Number</Form.Label>

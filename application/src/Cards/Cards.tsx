@@ -70,7 +70,7 @@ const Cards = () => {
                                         </Card.Text>
                                         
                                         <Link to="/Information"><Button variant="primary"> Make CV </Button> </Link>
-                                        <Link to="/CV1"><Button variant="primary">Preview</Button> </Link>
+                                        <Link to="/Cv1_template"><Button variant="primary">Preview</Button> </Link>
                                     </Card.Body>
                                 </Card>
                             </Col>
