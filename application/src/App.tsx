@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Resume from './Resume/Resume';
 import { Routes,Route } from 'react-router-dom';
+import Generate from './Resume_Templates/ResumeFormat1/Generate'
 import Home from './Content/Home'
 import Preveiw from "./Resume_Templates/InternashalaResume/Preview"
 import Information from "./Resume_Templates/InternashalaResume/Information"
@@ -20,7 +21,8 @@ const  App = () => {
         <Route path ="/Resume" element = {<Resume />} />
         <Route path = "/Information" element = {<Information />} />
         <Route path = "/ResumeFormat1" element = {<ResumeFormat1/>} />
-        <Route path = "/InternshalaResume" element = {<InternshalaResume name={""} email={""} mobileNumber={0} summary={""} extraCurricular={""} skill = {""} education1 ={""} />} />
+        <Route path = "/Generate" element = {<Generate/>} />
+        <Route path = "/InternshalaResume" element = {<InternshalaResume name={""} email={""} mobileNumber={0} summary={""} extraCurricular={""} skill = {""} educationBachelor ={""} educationBachelor_date = {0} />} />
         <Route path = "/Resume2_Template" element = {<Resume2_Template/>}/>
         <Route path = "Preveiw" element = {<Preveiw />} />
         <Route path = "/CV1" element = {<CV1/>} />

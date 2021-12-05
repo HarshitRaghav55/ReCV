@@ -1,5 +1,5 @@
 import React from "react";
-const ResumeFormat1 = () => {
+const Generate = () => {
 //     function addNewWEField() {
 
 //         let newNode = document.createElement('input');
@@ -252,4 +252,4 @@ const ResumeFormat1 = () => {
         </React.Fragment >
     );
 }
-export default ResumeFormat1;
+export default Generate;
