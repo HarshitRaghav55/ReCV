@@ -11,6 +11,7 @@ import InternshalaResume from "./Resume_Templates/InternashalaResume/Internshala
 import Resume2_Template from "./Resume_Templates/Resume_Templates2/Resume2_Template"
 import CV1 from "./CV1/CV1"
 import SignUp from "./signup/SignUp"
+import Auth from "./signup/useAuth"
 import cv1_template from "./CV1/Cv1_template"
 import Cv1_template from './CV1/Cv1_template';
 const  App = () => {
