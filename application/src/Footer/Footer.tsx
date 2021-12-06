@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="footer-distributed"  >
 
 <div className="footer-left">
-    <img src="Imagess/logoo.png" />
+    <img src="public/logoo.png" />
     <h3>About&nbsp;<br /><span>ReCV</span></h3>
 
     <p className="footer-links">
