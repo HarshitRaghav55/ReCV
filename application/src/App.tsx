@@ -25,7 +25,7 @@ const  App = () => {
         <Route path = "/Information" element = {<Information />} />
         <Route path = "/ResumeFormat1" element = {<ResumeFormat1/>} />
         <Route path = "/Generate" element = {<Generate/>} />
-        <Route path = "/InternshalaResume" element = {<InternshalaResume name={""} email={""} mobileNumber={0} summary={""} extraCurricular={""} skill = {""} educationBachelor ={""} educationBachelor_date = {0} />} />
+        <Route path = "/InternshalaResume" element = {<InternshalaResume name={""} email={""} mobileNumber={0} />} />
         <Route path = "/Resume2_Template" element = {<Resume2_Template/>}/>
         <Route path = "Preveiw" element = {<Preveiw />} />
         <Route path = "/CV1" element = {<CV1/>} />

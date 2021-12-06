@@ -10,23 +10,40 @@ import { listeners } from "process";
 import html2canvas from "html2canvas";
 
 type Props = {
-    name: String,
-    email: String,
+    name: string,
+    email: string,
     mobileNumber: number,
-    educationBachelor?: String,
-    educationMasters?: String,
-    education_HighSchool?: String,
-    education_HighSchool_date?: number,
-    education_Intermediate?: String,
-    education_Intermediate_date?: number,
-    internship?: String,
-    project1?: String,
-    skill: String,
-    summary: String,
-    extraCurricular: String,
-    location?: String,
+    educationBachelor?: string,
     educationBachelor_date?: number,
-    educationMasters_date?: number
+    educationBachelor_University?: string,
+    educationMasters?: string,
+    educationMasters_date?: number,
+    educationMasters_University?: string,
+    education_HighSchool?: string,
+    education_HighSchool_Board?: string,
+    education_HighSchool_date?: number,
+    education_Intermediate_Board?: string,
+    education_Intermediate_Branch?: string,
+    education_Intermediate_date?: number,
+    education_Intermediate_School?: string,
+    internship?: string,
+    internship_title?: string,
+    internship_date?: string,
+    trainingAndCourse_date?: string,
+    trainingAndCourse?: string,
+    trainingAndCourse_title?: string,
+    project1?: string,
+    skill1?: string,
+    skill2?: string,
+    skill3?: string,
+    skill4?: string,
+    skill1_level?: string,
+    skill2_level?: string,
+    skill3_level?: string,
+    skill4_level?: string,
+    summary?: string,
+    extraCurricular?: string,
+    city?: string
 };
 
 const InternshalaResume = (props: Props) => {
@@ -95,7 +112,7 @@ const InternshalaResume = (props: Props) => {
                                         display: 'flex',
                                         justifyContent: 'right', alignItems: 'right', margin: '0'
                                     }}>
-                                        {props.location}
+                                        {props.city}
                                     </p>
                                 </div>
                             </Col>
@@ -115,48 +132,81 @@ const InternshalaResume = (props: Props) => {
                                     </div>
                                 </Col>
                                 <Col>
+
+                                    <div>
+                                        {props.educationMasters && (<>
+                                            <h5>{props.educationMasters}</h5>
+                                            <p className="styles.educationStyling"
+                                                style={{ margin: '0' }}>
+                                                {props.educationMasters_University}
+                                            </p>
+                                            <p className="styles.educationStyling">
+                                                {props.educationMasters_date}
+                                            </p></>)}
+                                    </div>
                                     <div>
                                         {props.educationBachelor && (<>
                                             <h5>{props.educationBachelor}</h5>
                                             <p className="styles.educationStyling"
                                                 style={{ margin: '0' }}>
                                                 GLA University
-                                            </p></>)}
-                                        <p className="styles.educationStyling">
-                                            {props.educationBachelor_date}
-                                        </p>
-                                        <h5>Senior Seconadry(XII),Science</h5>
-                                        <p className="styles.educationStyling"
-                                            style={{ margin: '0' }}>N.R Public School</p>
-                                        <p className="styles.educationStyling" style={{ margin: '0' }}>(CBSE Board)</p>
-                                        <p>Year of completion: 2019</p>
-                                        <h5>Secondary(X)</h5>
-                                        <p className="styles.educationStyling" style={{ margin: '0' }}>Alpine Public School</p>
-                                        <p className="styles.educationStyling" style={{ margin: '0' }}>(CBSE board)</p>
-                                        <p className="styles.educationStyling mb-5" style={{ margin: '0' }}>Year of completion:2016</p>
+                                            </p>
+                                            <p className="styles.educationStyling">
+                                                {props.educationBachelor_date}
+                                            </p>
+                                        </>)}
+                                        <div>
+                                            <h5>Senior Seconadry(XII),{props.education_Intermediate_Branch}</h5>
+                                            <p className="styles.educationStyling"
+                                                style={{ margin: '0' }}>{props.education_Intermediate_School}</p>
+                                            <p className="styles.educationStyling" style={{ margin: '0' }}>({props.education_Intermediate_Board})</p>
+                                            <p>Year of completion: {props.education_Intermediate_date}</p>
+                                        </div>
+                                        <div>
+                                            <h5>Secondary(X)</h5>
+                                            <p className="styles.educationStyling" style={{ margin: '0' }}>{props.education_HighSchool}</p>
+                                            <p className="styles.educationStyling" style={{ margin: '0' }}>({props.education_HighSchool_Board})</p>
+                                            <p className="styles.educationStyling mb-5" style={{ margin: '0' }}>Year of completion: {props.education_HighSchool_date}</p>
+                                        </div>
                                     </div>
                                 </Col>
                             </Row>
 
-                            <Row>
+                            <Row>{(props.trainingAndCourse || props.internship) &&(<>
                                 <Col>
+                                
                                     <div className='trainings'>
                                         <h3>TRAININGS</h3>
                                     </div>
                                 </Col>
                                 <Col>
                                     <div>
-                                        <h5>Internships & Job Preparation</h5>
-                                        <p>Internshala Trainings, Online</p>
-                                        <p style={{ margin: '0' }}>Jun 2021-Jul 2021</p>
-                                        <p style={{ margin: '1' }}>Sucessfully complete a four weeks online certified trainig on
-                                            Internships & Job Preparation. The training consisted of Getting
-                                            Started with the Job Hunt, Building up your Gears and Going at the
-                                            Front Modules. In the final assessment, I scored 80% marks.
-                                        </p>
-                                        <h5 className="mb-5">Programming with Python</h5>
+                                        <div>
+                                            {props.trainingAndCourse && (<>
+                                            <h5>Training & Courses</h5>
+                                            <p>{props.trainingAndCourse_title}</p>
+                                            <p style={{ margin: '0' }}>
+                                                {props.trainingAndCourse_date}
+                                            </p>
+                                            <p style={{ margin: '1' }}>
+                                                {props.trainingAndCourse}
+                                            </p>
+                                            </>)}
+                                        </div>
+                                        
+                                        <div>
+                                            {props.internship && (<>
+                                            <h5>Internships & Job Preparation</h5>
+                                            <p>{props.internship_title}</p>
+                                            <p style={{ margin: '0' }}>{props.internship_date}</p>
+                                            <p style={{ margin: '1' }}>
+                                                {props.internship}
+                                            </p>
+                                            </>)}
+                                        </div>
                                     </div>
                                 </Col>
+                                </>)}
                             </Row>
                             <Row>
                                 <Col>
@@ -165,22 +215,22 @@ const InternshalaResume = (props: Props) => {
                                 <Col>
                                     <Row>
                                         <Col>
-                                            <h5>Java</h5>
-                                            <p>Intermediate</p>
+                                            <h5>{props.skill1}</h5>
+                                            <p>{props.skill1_level}</p>
                                         </Col>
                                         <Col>
-                                            <h5>Python</h5>
-                                            <p>Beginner</p>
+                                            <h5>{props.skill2}</h5>
+                                            <p>{props.skill2}</p>
                                         </Col>
                                     </Row>
                                     <Row>
                                         <Col>
-                                            <h5>HTML</h5>
-                                            <p>Beginner</p>
+                                            <h5>{props.skill3}</h5>
+                                            <p>{props.skill3_level}</p>
                                         </Col>
                                         <Col>
-                                            <h5>CSS</h5>
-                                            <p>Beginner</p>
+                                            <h5>{props.skill4}</h5>
+                                            <p>{props.skill4_level}</p>
                                         </Col>
                                     </Row>
 
