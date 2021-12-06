@@ -1,12 +1,14 @@
 import React from "react";
 import Content from "./Content";
 import Cards from "../Cards/Cards";
-import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+
 const Home = () =>{
     return (<React.Fragment>
-        {/* <Header /> */}
+        
         <Content />
         <Cards />
+        <Footer />
     </React.Fragment>)
 }
 export default Home;
