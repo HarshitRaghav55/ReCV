@@ -1,12 +1,12 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from "react-bootstrap";
-import styles from './appStyles.module.css'
+// import styles from './appStyles.module.css'
 import jsPDF from 'jspdf';
-import pdfMake from 'pdfmake/build/pdfmake';
-import pdfFonts from 'pdfmake/build/vfs_fonts';
-import htmlToPdfmake from 'html-to-pdfmake';
-import { listeners } from "process";
+// import pdfMake from 'pdfmake/build/pdfmake';
+// import pdfFonts from 'pdfmake/build/vfs_fonts';
+// import htmlToPdfmake from 'html-to-pdfmake';
+// import { listeners } from "process";
 import html2canvas from "html2canvas";
 
 type Props = {
@@ -47,9 +47,9 @@ type Props = {
 };
 
 const InternshalaResume = (props: Props) => {
-    const pdfResume = document.getElementById('PrintResume');
+    // const pdfResume = document.getElementById('PrintResume');
     const printResume = () => {
-        const doc = new jsPDF();
+        // const doc = new jsPDF();
 
         //   { //get table html
         // const pdfResume = document.getElementById('PrintResume');
@@ -67,8 +67,7 @@ const InternshalaResume = (props: Props) => {
             .then((canvas) => {
                 const imgData = canvas.toDataURL('image/png');
                 const pdf = new jsPDF();
-                pdf.addImage(imgData, 'JPEG', 0, 10, 200, 200);
-                // pdf.output('dataurlnewwindow');
+                pdf.addImage(imgData, 'JPEG', 0, 10, 200, 200);            
                 pdf.save("download.pdf");
             });
     }

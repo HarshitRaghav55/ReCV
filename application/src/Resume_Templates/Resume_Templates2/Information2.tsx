@@ -14,45 +14,63 @@ const Information2 = () => {
     const [mobileNumber, setMobileNumber] = useState<number>();
     const [address, setAddress] = useState("");
     const [educationBachelor, setEducationBachelor] = useState("");
+    const [educationBachelorCpi, setEducationBachelorCpi] = useState<number>();
     const [educationBachelor_date, setEducationBachelor_date] = useState<number>();
     const [educationBachelor_University, setEducationBachelor_University] = useState("");
     const [educationMasters, setEducationMasters] = useState("");
+    const [educationMastersCpi, setEducationMastersCpi] = useState<number>();
     const [educationMasters_date, setEducationMasters_date] = useState<number>()
     const [educationMasters_University, setEducationMasters_University] = useState("");
     const [educationIntermediate_Branch, setEducationIntermediate_Branch] = useState("");
     const [educationIntermediate_date, setEducationIntermediate_date] = useState<number>();
-    const [educationIntermediate_School, setEducationIntermediate_School] = useState("");
+    const [educationIntermediate_Percentage, setEducationIntermediate_Percentage] = useState("");
     const [educationIntermediate_Board, setEducationIntermediate_Board] = useState("");
-    const [educationHighSchool, setEducationHighSchool] = useState("");
+    const [educationHighSchool_Percentage, setEducationHighSchool_Percentage] = useState("");
     const [educationHighSchool_date, setEducationHighSchool_date] = useState<number>();
     const [educationHighSchool_Board, setEducationHighSchool_Board] = useState("");
     const [internship_Title, setInternship_Title] = useState("");
     const [internship, setInternship] = useState("");
     const [internship_date, setInternship_date] = useState("");
-    const [trainingAndCourse, setTrainingAndCourse] = useState("");
-    const [trainingAndCourse_date, setTrainingAndCourse_date] = useState("");
-    const [trainingAndCourse_Title, setTrainingAndCourse_Title] = useState("");
+    const [course1, setCourse1] = useState("");
+    const [course2, setCourse2] = useState("");
+    const [course3, setCourse3] = useState("");
+    const [course4, setCourse4] = useState("");
     const [project1, setProject1] = useState("");
-    const [skill1, setSkill1] = useState("");
-    const [skill1_level, setSkill1_level] = useState("");
-    const [skill2, setSkill2] = useState("");
-    const [skill2_level, setSkill2_level] = useState("");
-    const [skill3, setSkill3] = useState("");
-    const [skill3_level, setSkill3_level] = useState("");
-    const [skill4, setSkill4] = useState("");
-    const [skill4_level, setSkill4_level] = useState("");
-    const [skill5, setSkill5] = useState("");
-    const [skill5_level, setSkill5_level] = useState("");
-    const [skill6, setSkill6] = useState("");
-    const [skill6_level, setSkill6_level] = useState("");
-    const [summary, setSummary] = useState("");
-    const [extraCurricular, setExtraCurricular] = useState("");
+    const [project2, setProject2] = useState("");
+    const [project3, setProject3] = useState("");
+    const [project4, setProject4] = useState("");
+    const [progSkill1, setProgSkill1] = useState("");
+    const [progSkill2, setProgSkill2] = useState("");
+    const [progSkill3, setProgSkill3] = useState("");
+    const [webSkill1, setWebSkill1] = useState("");
+    const [webSkill2, setWebSkill2] = useState("");
+    const [webSkill3, setWebSkill3] = useState("");
+    const [dataSkill1, setDataSkill1] = useState("");
+    const [dataSkill2, setDataSkill2] = useState("");
+    const [dataSkill3, setDataSkill3] = useState("");
+    const [osSkill1, setOsSkill1] = useState("");
+    const [osSkill2, setOsSkill2] = useState("");
+    const [misSkill2, setMisSkill2] = useState("");
+    const [misSkill1, setMisSkill1] = useState("");
+    const [internshipCompany, setInternshipCompany] = useState("");
+    const [achievement1, setAchievement1] = useState("");
+    const [achievement1Title, setAchievement1Title] = useState("");
+    const [link1, setLink1] = useState("");
+    const [link2, setLink2] = useState("");
+    const [link3, setLink3] = useState("");
+    const [link4, setLink4] = useState("");
+    const [hobbies1, setHobbies1] = useState("");
+    const [hobbies2, setHobbies2] = useState("");
+    const [hobbies3, setHobbies3] = useState("");
+    const [hobbies4, setHobbies4] = useState("");
+
+
 
 
     const [formSubmitted, setFormSubmitted] = useState(false);
     const submit = (e: any) => {
-        if (!name || !mobileNumber || !email || !educationHighSchool || !educationHighSchool_Board ||
-            !educationHighSchool_date || !educationIntermediate_Board || !educationIntermediate_School || !educationIntermediate_Branch || !educationIntermediate_date) {
+        if (!name || !mobileNumber || !email || !educationHighSchool_Percentage || !educationHighSchool_Board ||
+            !educationHighSchool_date || !educationIntermediate_Board || !educationIntermediate_Percentage || !educationIntermediate_Branch || !educationIntermediate_date) {
             alert('All * feilds are required');
             e.preventDefault();
         }
@@ -121,7 +139,12 @@ const Information2 = () => {
                                             <Form.Label style={{ color: 'darkblue' }}>University</Form.Label>
                                             <Form.Control as="textarea" value={educationMasters_University} onChange={event => setEducationMasters_University(event.target.value)} rows={1} />
                                         </Col>
+                                        <Col lg>
+                                            <Form.Label style={{ color: 'darkblue' }}>CPI</Form.Label>
+                                            <Form.Control as="textarea" value={educationMastersCpi} onChange={event => setEducationMastersCpi(parseInt(event.target.value))} rows={1} />
+                                        </Col>
                                     </Row>
+
                                 </Row>
                                 <Row>
                                     <Row>
@@ -136,8 +159,14 @@ const Information2 = () => {
                                         </Col>
                                     </Row>
                                     <Row>
-                                        <Form.Label style={{ color: 'darkblue' }}>University</Form.Label>
-                                        <Form.Control as="textarea" value={educationBachelor_University} onChange={event => setEducationBachelor_University(event.target.value)} rows={1} />
+                                        <Col lg>
+                                            <Form.Label style={{ color: 'darkblue' }}>University</Form.Label>
+                                            <Form.Control as="textarea" value={educationBachelor_University} onChange={event => setEducationBachelor_University(event.target.value)} rows={1} />
+                                        </Col>
+                                        <Col lg>
+                                            <Form.Label style={{ color: 'darkblue' }}>CPI</Form.Label>
+                                            <Form.Control as="textarea" value={educationBachelorCpi} onChange={event => setEducationBachelorCpi(parseInt(event.target.value))} rows={1} />
+                                        </Col>
                                     </Row>
                                 </Row>
                                 <Row>
@@ -154,8 +183,8 @@ const Information2 = () => {
                                     </Row>
                                     <Row>
                                         <Col md>
-                                            <Form.Label style={{ color: 'darkblue' }}>School</Form.Label>
-                                            <Form.Control as="textarea" value={educationIntermediate_School} onChange={event => setEducationIntermediate_School(event.target.value)} rows={1} />
+                                            <Form.Label style={{ color: 'darkblue' }}>Percentage</Form.Label>
+                                            <Form.Control as="textarea" value={educationIntermediate_Percentage} onChange={event => setEducationIntermediate_Percentage(event.target.value)} rows={1} />
                                         </Col>
                                         <Col md>
                                             <Form.Label style={{ color: 'darkblue' }}>Board</Form.Label>
@@ -167,8 +196,8 @@ const Information2 = () => {
                                     <Row>
                                         <h5><Form.Label style={{ color: 'darkblue' }}>Secondary(X)</Form.Label></h5>
                                         <Col lg>
-                                            <Form.Label style={{ color: 'darkblue' }}>School</Form.Label>
-                                            <Form.Control as="textarea" value={educationHighSchool} onChange={event => setEducationHighSchool(event.target.value)} rows={1} />
+                                            <Form.Label style={{ color: 'darkblue' }}>Percentage</Form.Label>
+                                            <Form.Control as="textarea" value={educationHighSchool_Percentage} onChange={event => setEducationHighSchool_Percentage(event.target.value)} rows={1} />
                                         </Col>
                                         <Col lg>
                                             <Form.Label style={{ color: 'darkblue' }}>Year Of Completion</Form.Label>
@@ -187,13 +216,25 @@ const Information2 = () => {
                         </Form>
                         <Form >
                             <Form.Group className="mb-2" controlId="exampleForm.ControlTextarea1">
-                                <h4><Form.Label style={{ color: 'darkblue' }}>TRAININGS and COURSES</Form.Label></h4>
-                                <Form.Label style={{ color: 'darkblue' }}>TITLE</Form.Label>
-                                <Form.Control as="textarea" value={trainingAndCourse_Title} onChange={event => setTrainingAndCourse_Title(event.target.value)} rows={2} />
-                                <Form.Label style={{ color: 'darkblue' }}>DESCRIPTION</Form.Label>
-                                <Form.Control as="textarea" value={trainingAndCourse} onChange={event => setTrainingAndCourse(event.target.value)} rows={2} />
-                                <Form.Label style={{ color: 'darkblue' }}>DURATION</Form.Label>
-                                <Form.Control as="textarea" value={trainingAndCourse_date} onChange={event => setTrainingAndCourse_date(event.target.value)} rows={1} />
+                                <h4><Form.Label style={{ color: 'darkblue' }}>COURSES</Form.Label></h4>
+                                <Row>
+                                    <Col lg>
+                                        <Form.Label style={{ color: 'darkblue' }}>Course 1</Form.Label>
+                                        <Form.Control as="textarea" value={course1} onChange={event => setCourse1(event.target.value)} rows={2} />
+                                    </Col>
+                                    <Col lg>
+                                        <Form.Label style={{ color: 'darkblue' }}>Course 2</Form.Label>
+                                        <Form.Control as="textarea" value={course2} onChange={event => setCourse2(event.target.value)} rows={2} />
+                                    </Col>
+                                    <Col lg>
+                                        <Form.Label style={{ color: 'darkblue' }}>Course 3</Form.Label>
+                                        <Form.Control as="textarea" value={course3} onChange={event => setCourse3(event.target.value)} rows={1} />
+                                    </Col>
+                                    <Col lg>
+                                        <Form.Label style={{ color: 'darkblue' }}>Course 4</Form.Label>
+                                        <Form.Control as="textarea" value={course4} onChange={event => setCourse4(event.target.value)} rows={1} />
+                                    </Col>
+                                </Row>
                             </Form.Group>
                         </Form>
 
@@ -206,6 +247,8 @@ const Information2 = () => {
                                 <Form.Control as="textarea" value={internship} onChange={event => setInternship(event.target.value)} rows={2} />
                                 <Form.Label style={{ color: 'darkblue' }}>DURATION</Form.Label>
                                 <Form.Control as="textarea" value={internship_date} onChange={event => setInternship_date(event.target.value)} rows={1} />
+                                <Form.Label style={{ color: 'darkblue' }}>Company's Website</Form.Label>
+                                <Form.Control as="textarea" value={internshipCompany} onChange={event => setInternshipCompany(event.target.value)} rows={1} />
                             </Form.Group>
 
                         </Form>
@@ -213,44 +256,119 @@ const Information2 = () => {
 
                             <Form.Group className="mb-2" controlId="exampleForm.ControlTextarea1">
                                 <h4> <Form.Label style={{ color: 'darkblue' }}>PROJECTS</Form.Label></h4>
+                                <Form.Label style={{ color: 'darkblue' }}>PROJECT 1</Form.Label>
                                 <Form.Control as="textarea" value={project1} onChange={event => setProject1(event.target.value)} rows={2} />
+                                <Form.Label style={{ color: 'darkblue' }}>PROJECT 2</Form.Label>
+                                <Form.Control as="textarea" value={project2} onChange={event => setProject2(event.target.value)} rows={2} />
+                                <Form.Label style={{ color: 'darkblue' }}>PROJECT 3</Form.Label>
+                                <Form.Control as="textarea" value={project3} onChange={event => setProject3(event.target.value)} rows={2} />
+                                <Form.Label style={{ color: 'darkblue' }}>PROJECT 4</Form.Label>
+                                <Form.Control as="textarea" value={project4} onChange={event => setProject4(event.target.value)} rows={2} />
                             </Form.Group>
                         </Form>
                         <Form >
                             <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
-                                <h4><Form.Label style={{ color: 'darkblue' }}>Skill</Form.Label></h4>
+                                <h4><Form.Label style={{ color: 'darkblue' }}>Skills</Form.Label></h4>
+                                <h5><Form.Label style={{ color: 'darkblue' }}>Programming Skills</Form.Label></h5>
                                 <Row>
                                     <Col>
                                         <Form.Label style={{ color: 'darkblue' }}>First</Form.Label>
-                                        <Form.Control as="textarea" value={skill1} onChange={event => setSkill1(event.target.value)} rows={1} />
+                                        <Form.Control as="textarea" value={progSkill1} onChange={event => setProgSkill1(event.target.value)} rows={1} />
                                     </Col>
                                     <Col>
                                         <Form.Label style={{ color: 'darkblue' }}>Second</Form.Label>
-                                        <Form.Control as="textarea" value={skill2} onChange={event => setSkill2(event.target.value)} rows={1} />
+                                        <Form.Control as="textarea" value={progSkill2} onChange={event => setProgSkill2(event.target.value)} rows={1} />
                                     </Col>
                                     <Col>
                                         <Form.Label style={{ color: 'darkblue' }}>Third</Form.Label>
-                                        <Form.Control as="textarea" value={skill3} onChange={event => setSkill3(event.target.value)} rows={1} />
+                                        <Form.Control as="textarea" value={progSkill3} onChange={event => setProgSkill3(event.target.value)} rows={1} />
+                                    </Col>
+
+                                </Row>
+                                <h5><Form.Label style={{ color: 'darkblue' }}>Web Skills</Form.Label></h5>
+                                <Row>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>First</Form.Label>
+                                        <Form.Control as="textarea" value={webSkill1} onChange={event => setWebSkill1(event.target.value)} rows={1} />
                                     </Col>
                                     <Col>
-                                        <Form.Label style={{ color: 'darkblue' }}>Fourth</Form.Label>
-                                        <Form.Control as="textarea" value={skill4} onChange={event => setSkill4(event.target.value)} rows={1} />
+                                        <Form.Label style={{ color: 'darkblue' }}>Second</Form.Label>
+                                        <Form.Control as="textarea" value={webSkill2} onChange={event => setWebSkill2(event.target.value)} rows={1} />
+                                    </Col>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>Third</Form.Label>
+                                        <Form.Control as="textarea" value={webSkill3} onChange={event => setWebSkill3(event.target.value)} rows={1} />
+                                    </Col>
+                                </Row>
+                                <h5><Form.Label style={{ color: 'darkblue' }}>data Skills</Form.Label></h5>
+                                <Row>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>First</Form.Label>
+                                        <Form.Control as="textarea" value={dataSkill1} onChange={event => setDataSkill1(event.target.value)} rows={1} />
+                                    </Col>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>Second</Form.Label>
+                                        <Form.Control as="textarea" value={dataSkill2} onChange={event => setDataSkill2(event.target.value)} rows={1} />
+                                    </Col>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>Third</Form.Label>
+                                        <Form.Control as="textarea" value={dataSkill3} onChange={event => setDataSkill3(event.target.value)} rows={1} />
+                                    </Col>
+                                </Row>
+                                <h5><Form.Label style={{ color: 'darkblue' }}>Operating System Skills</Form.Label></h5>
+                                <Row>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>First</Form.Label>
+                                        <Form.Control as="textarea" value={osSkill1} onChange={event => setOsSkill1(event.target.value)} rows={1} />
+                                    </Col>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>Second</Form.Label>
+                                        <Form.Control as="textarea" value={osSkill2} onChange={event => setOsSkill2(event.target.value)} rows={1} />
+                                    </Col>
+                                </Row>
+                                <h5><Form.Label style={{ color: 'darkblue' }}>Miscellaneous Skills</Form.Label></h5>
+                                <Row>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>First</Form.Label>
+                                        <Form.Control as="textarea" value={misSkill1} onChange={event => setMisSkill1(event.target.value)} rows={1} />
+                                    </Col>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>Second</Form.Label>
+                                        <Form.Control as="textarea" value={misSkill2} onChange={event => setMisSkill2(event.target.value)} rows={1} />
                                     </Col>
                                 </Row>
                             </Form.Group>
                         </Form>
                         <Form >
+
                             <Form.Group className="mb-2" controlId="exampleForm.ControlTextarea1">
-                                <Form.Label style={{ color: 'darkblue' }}>EXTRA/CO-CURRICULAR ACTIVITIES</Form.Label>
-                                <Form.Control as="textarea" value={extraCurricular} onChange={event => setExtraCurricular(event.target.value)} rows={2} />
+                                <h4> <Form.Label style={{ color: 'darkblue' }}>PERSONAL LINKS</Form.Label></h4>
+                                <Form.Label style={{ color: 'darkblue' }}>Link 1</Form.Label>
+                                <Form.Control as="textarea" value={link1} onChange={event => setLink1(event.target.value)} rows={2} />
+                                <Form.Label style={{ color: 'darkblue' }}>Link 2</Form.Label>
+                                <Form.Control as="textarea" value={link2} onChange={event => setLink2(event.target.value)} rows={2} />
+                                <Form.Label style={{ color: 'darkblue' }}>Link 3</Form.Label>
+                                <Form.Control as="textarea" value={link3} onChange={event => setLink3(event.target.value)} rows={2} />
+                                <Form.Label style={{ color: 'darkblue' }}>Link 4</Form.Label>
+                                <Form.Control as="textarea" value={link4} onChange={event => setLink4(event.target.value)} rows={2} />
                             </Form.Group>
                         </Form>
                         <Form >
-                            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                <Form.Label style={{ color: 'darkblue' }}>Summary</Form.Label>
-                                <Form.Control as="textarea" value={summary} onChange={event => setSummary(event.target.value)} rows={3} />
+
+                            <Form.Group className="mb-2" controlId="exampleForm.ControlTextarea1">
+                                <h4> <Form.Label style={{ color: 'darkblue' }}>HOBBIES</Form.Label></h4>
+                                <Form.Label style={{ color: 'darkblue' }}>Hobby 1</Form.Label>
+                                <Form.Control as="textarea" value={hobbies1} onChange={event => setHobbies1(event.target.value)} rows={2} />
+                                <Form.Label style={{ color: 'darkblue' }}>Hobby 2</Form.Label>
+                                <Form.Control as="textarea" value={hobbies2} onChange={event => setHobbies2(event.target.value)} rows={2} />
+                                <Form.Label style={{ color: 'darkblue' }}>Hobby 3</Form.Label>
+                                <Form.Control as="textarea" value={hobbies3} onChange={event => setHobbies3(event.target.value)} rows={2} />
+                                <Form.Label style={{ color: 'darkblue' }}>Hobby 4</Form.Label>
+                                <Form.Control as="textarea" value={hobbies4} onChange={event => setHobbies4(event.target.value)} rows={2} />
                             </Form.Group>
                         </Form>
+
+
                         <div className="form-group">
                             <button type="button" onClick={submit} className="btn btn-primary btn-lg">Submit</button>
                         </div>
@@ -262,14 +380,7 @@ const Information2 = () => {
                     name={name}
                     email={email}
                     mobileNumber={mobileNumber!}
-                    skill1={skill1}
-                    skill2={skill2}
-                    skill3={skill3}
-                    skill4={skill4}
-                    skill1_level={skill1_level}
-                    skill2_level={skill2_level}
-                    skill3_level={skill3_level}
-                    skill4_level={skill4_level}
+                    internshipCompany={internshipCompany}
                     internship={internship}
                     internship_date={internship_date}
                     internship_title={internship_Title}
@@ -279,16 +390,14 @@ const Information2 = () => {
                     educationMasters={educationMasters}
                     educationMasters_date={educationMasters_date!}
                     educationMasters_University={educationMasters_University}
-                    education_HighSchool={educationHighSchool}
+                    education_HighSchool_Percentage={educationHighSchool_Percentage}
                     education_HighSchool_Board={educationHighSchool_Board}
                     education_HighSchool_date={educationHighSchool_date!}
-                    education_Intermediate_School={educationIntermediate_School}
+                    education_Intermediate_Percentage={educationIntermediate_Percentage}
                     education_Intermediate_Board={educationIntermediate_Board}
                     education_Intermediate_Branch={educationIntermediate_Branch}
                     education_Intermediate_date={educationIntermediate_date!}
-                    trainingAndCourse={trainingAndCourse}
-                    trainingAndCourse_date={trainingAndCourse_date}
-                    trainingAndCourse_title={trainingAndCourse_Title}
+
 
 
                 />

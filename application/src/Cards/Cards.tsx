@@ -47,7 +47,7 @@ const Cards = () => {
                                             the card's content.
                                         </Card.Text>
                                         <Button variant="primary">Make Resume</Button>
-                                        <Link to="/Resume2_Template"><Button variant="primary" >Preview</Button></Link>
+                                        <Link to="/Preview2"><Button variant="primary" >Preview</Button></Link>
                                     </Card.Body>
                                 </Card>
                             </Col>

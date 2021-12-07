@@ -4,7 +4,7 @@ import { Table, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { fontWeight } from 'html2canvas/dist/types/css/property-descriptors/font-weight';
-const Preveiw2 = () => {
+const Preview2 = () => {
     return(
         <React.Fragment>
             <Container>
@@ -61,21 +61,19 @@ const Preveiw2 = () => {
                     borderColor: '#000000'
                 }} />
                 <div className="Experience">
-                    <h5>Experience</h5>
+                    <h5>Internship Experience</h5>
                     <Row>
                         <Col>
                             <ul>
                                 <li>XYZ Engineer at 'ABC'</li>
                                 Analysed app usgae staistics to recommend itmes based on user's preference.
-                                <li>XYZ Engineer at 'ABC'</li>
-                                Designed methods to improve the existing unit test mechanism
+                                
                             </ul>
                         </Col>
                         <Col>
                             <p style={{ margin: '0', textAlign: 'right' }}>May 2016-July 2016</p>
                             <p style={{ margin: '0', textAlign: 'right' }}>www.abc.in</p>
-                            <p style={{ margin: '0', textAlign: 'right' }}>Dec 2015</p>
-                            <p style={{ margin: '0', textAlign: 'right' }}>www.abc.in</p>
+                            
                         </Col>
                         <hr style={{
                             color: 'black',
@@ -97,38 +95,7 @@ const Preveiw2 = () => {
                     height: 1,
                     borderColor: '#000000'
                 }} /> */}
-                <div className="Publications">
-                    <h5>Publications</h5>
-                    <Row>
-                        <Col>
-                            <ul>
-                                <li>Advanced analysts of damping motion</li>
-                                Mentors
-
-                            </ul>
-                        </Col>
-                        <Col>
-                            <p style={{ textAlign: 'right' }}>PCES 2010</p>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <ul>
-                                <li>Efficient ranking of search results</li>
-                                Mentors
-                            </ul>
-                        </Col>
-                        <Col>
-                            <p style={{ textAlign: 'right' }}>LOCS 2010</p>
-                        </Col>
-                        <hr style={{
-                            color: 'black',
-                            backgroundColor: 'black',
-                            height: 3,
-                            borderColor: '#000000'
-                        }} />
-                    </Row>
-                </div>
+                
                 <div className='Projects'>
                     <h5>Projects</h5>
                     <Row>
@@ -190,18 +157,7 @@ const Preveiw2 = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            <ul>
-                                <li>
-                                    <p style={{fontWeight:'bold', margin:'0'}}>Project title</p>
-                                    Graphical interface to share files over institute's network.
-                                </li>
-                            </ul>
-                        </Col>
-                        <Col>
-                            <p style={{ margin: '0', textAlign: 'right' }}>Apr 2015-Sep 2015</p>
-                            <p style={{ margin: '0', textAlign: 'right' }}>goo.gl/link</p>
-                        </Col>
+                       
                         <hr style={{
                             color: 'black',
                             backgroundColor: 'black',
@@ -220,19 +176,8 @@ const Preveiw2 = () => {
                         <li> <p>Operating system:Windows, Linux</p></li>
                     </ul>
                 </div>
-                <hr style={{
-                    color: 'black',
-                    backgroundColor: 'black',
-                    height: 3,
-                    borderColor: '#000000'
-                }} />
-                <div className='Positions of Responsibility'>
-                    <h5>Positions of Responsibility</h5>
-                    <ul>
-                        <li>XYZ Head, ABC 2016(the annual XYZ of IIT Guwahati)</li>
-                        <li>City representative, New Delhi, ABC 2015</li>
-                    </ul>
-                </div>
+                
+                
                 <hr style={{
                     color: 'black',
                     backgroundColor: 'black',
@@ -256,11 +201,7 @@ const Preveiw2 = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            <ul>
-                                <li style={{ fontWeight: 'bold' }}>KVPY 2013-2014</li>Secured 1st position in the National level contest.
-                            </ul>
-                        </Col>
+                        
                         <hr style={{
                             color: 'black',
                             backgroundColor: 'black',
@@ -361,20 +302,7 @@ const Preveiw2 = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            <ul>
-                                <li>
-                                    Medium://xyz
-                                </li>
-                            </ul>
-                        </Col>
-                        <Col>
-                            <ul>
-                                <li>
-                                    Web-Page://xyz.github.io
-                                </li>
-                            </ul>
-                        </Col>
+                        
                         <hr style={{
                             color: 'black',
                             backgroundColor: 'black',
@@ -396,4 +324,4 @@ const Preveiw2 = () => {
         </React.Fragment>
     );
 }
-export default Preveiw2;
+export default Preview2;

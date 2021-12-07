@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React from 'react';
 import Header from './Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Resume from './Resume/Resume';
@@ -12,7 +12,7 @@ import InternshalaResume from "./Resume_Templates/InternashalaResume/Internshala
 import Resume2_Template from "./Resume_Templates/Resume_Templates2/Resume2_Template"
 import CV1 from "./CV1/CV1"
 import CV2 from "./CV1/CV2"
-import Footer from './Footer/Footer';
+import Preview2 from './Resume_Templates/Resume_Templates2/Preview2';
 import SignUp from "./signup/SignUp"
 // import Auth from "./signup/useAuth"
 import Cv1_template from './CV1/Cv1_template';
@@ -29,6 +29,7 @@ const  App = () => {
         <Route path = "/InternshalaResume" element = {<InternshalaResume name={""} email={""} mobileNumber={0} />} />
         <Route path = "/Resume2_Template" element = {<Resume2_Template/>}/>
         <Route path = "Preveiw" element = {<Preveiw />} /> 
+        <Route path = "Preview2" element = {<Preview2 />} />
         <Route path = "/CV1" element = {<CV1 />} />
         <Route path = "/CV2" element = {<CV2 />} />
         <Route path = "/SignUp" element = {<SignUp /> } />

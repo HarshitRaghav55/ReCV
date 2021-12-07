@@ -1,59 +1,90 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Table, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import { fontWeight } from 'html2canvas/dist/types/css/property-descriptors/font-weight';
 type Props = {
-    name: string,
-    email: string,
-    mobileNumber: number,
+    name?: string,
+    email?: string,
+    mobileNumber?: number,
     educationBachelor?: string,
     educationBachelor_date?: number,
     educationBachelor_University?: string,
+    educationBachelorCpi?: number,
     educationMasters?: string,
     educationMasters_date?: number,
     educationMasters_University?: string,
-    education_HighSchool?: string,
+    educationMastersCpi?: number,
+    education_HighSchool_Percentage?: string,
     education_HighSchool_Board?: string,
     education_HighSchool_date?: number,
     education_Intermediate_Board?: string,
     education_Intermediate_Branch?: string,
     education_Intermediate_date?: number,
-    education_Intermediate_School?: string,
+    education_Intermediate_Percentage?: string,
+    programmingSkill1?: string,
+    programmingSkill2?: string,
+    programmingSkill3?: string,
+    webSkill1?: string,
+    webSkill2?: string,
+    webSkill3?: string,
+    databaseSkill1?: string,
+    databaseSkill2?: string,
+    databaseSkill3?: string,
+    osSkill1?: string,
+    osSkill2?: string,
+    misSkill1?: string,
+    misSkill2?: string,
     internship?: string,
     internship_title?: string,
     internship_date?: string,
-    trainingAndCourse_date?: string,
-    trainingAndCourse?: string,
-    trainingAndCourse_title?: string,
+    course1?: string,
+    course2?: string,
+    course3?: string,
+    course4?: string,
     project1?: string,
-    skill1?: string,
-    skill2?: string,
-    skill3?: string,
-    skill4?: string,
-    skill1_level?: string,
-    skill2_level?: string,
-    skill3_level?: string,
-    skill4_level?: string,
-    summary?: string,
-    extraCurricular?: string,
-    city?: string
+    project2?: string,
+    project3?: string,
+    project4?: string,
+    project1Date?: string,
+    project2Date?: string,
+    project3Date?: string,
+    project4Date?: string,
+    project1Link?: string,
+    project2Link?: string,
+    project3Link?: string,
+    project4Link?: string,
+    project1Title?: string,
+    project2Title?: string,
+    project3Title?: string,
+    project4Title?: string,
+    achievement1?: string,
+    achievement2?: string,
+    achievement1Title?: string,
+    achievement2Title?: string,
+    link1?: string,
+    link2?: string,
+    link3?: string,
+    link4?: string,
+    hobbies1?: string,
+    hobbies2?: string,
+    hobbies3?: string,
+    hobbies4?: string,
+    internshipCompany?: string
 };
-const Resume2_Template = (props : Props) => {
+const Resume2_Template: React.FC<Props> = (props: Props) => {
     return (
         <React.Fragment>
             <Container>
                 <div className='details' style={{ justifyContent: 'center', textAlign: 'center' }}>
-                    <h3>Abc xyz</h3>
-                    <p style={{ margin: '0' }}>xyz.xyz@gmail.com | +91-999999999 | abc.github.io</p>
+                    <h3>{props.name}</h3>
+                    <p style={{ margin: '0' }}>{props.email} | {props.mobileNumber} | abc.github.io</p>
                     <p style={{ margin: '0' }}>Github://abcxyz | LinkedIn://xyzabc | CodeChef://absnx | HcakerRank://absnxy</p>
                 </div>
                 <hr style={{
                     color: 'dark',
                     //backgroundColor: 'black',
                     height: 3,
-                    fontWeight:'bold',
+                    fontWeight: 'bold',
                     //borderColor: 'yellow'
                 }} />
                 <div className='Education'>
@@ -68,24 +99,29 @@ const Resume2_Template = (props : Props) => {
                             </tr>
                         </thead>
                         <tbody>
-
                             <tr>
-                                <td>2015-Present</td>
-                                <td>B.Tech</td>
-                                <td>National Institute of Technology Warangal</td>
-                                <td>9.00 (Current)</td>
+                                <td>{props.educationMasters_date}</td>
+                                <td>{props.educationMasters}</td>
+                                <td>{props.educationMasters_University}</td>
+                                <td>{props.educationMastersCpi} (Current)</td>
                             </tr>
                             <tr>
-                                <td>2015</td>
+                                <td>{props.educationBachelor_date}</td>
+                                <td>{props.educationBachelor}</td>
+                                <td>{props.educationBachelor_University}</td>
+                                <td>{props.educationBachelorCpi}</td>
+                            </tr>
+                            <tr>
+                                <td>{props.education_Intermediate_date}</td>
                                 <td>Senior seconadry</td>
-                                <td>CBSE board</td>
-                                <td>97.0%</td>
+                                <td>{props.education_Intermediate_Board}</td>
+                                <td>{props.education_Intermediate_Percentage}</td>
                             </tr>
                             <tr>
-                                <td>2013</td>
+                                <td>{props.education_HighSchool_date}</td>
                                 <td>Seconadry</td>
-                                <td>CBSE board</td>
-                                <td>10.0</td>
+                                <td>{props.education_HighSchool_Board}</td>
+                                <td>{props.education_HighSchool_Percentage}</td>
                             </tr>
                         </tbody>
                     </Table>
@@ -97,65 +133,19 @@ const Resume2_Template = (props : Props) => {
                     borderColor: '#000000'
                 }} />
                 <div className="Experience">
-                    <h5>Experience</h5>
+                    <h5>Internship Experience</h5>
                     <Row>
                         <Col>
                             <ul>
-                                <li>XYZ Engineer at 'ABC'</li>
-                                Analysed app usgae staistics to recommend itmes based on user's preference.
-                                <li>XYZ Engineer at 'ABC'</li>
-                                Designed methods to improve the existing unit test mechanism
-                            </ul>
-                        </Col>
-                        <Col>
-                            <p style={{ margin: '0', textAlign: 'right' }}>May 2016-July 2016</p>
-                            <p style={{ margin: '0', textAlign: 'right' }}>www.abc.in</p>
-                            <p style={{ margin: '0', textAlign: 'right' }}>Dec 2015</p>
-                            <p style={{ margin: '0', textAlign: 'right' }}>www.abc.in</p>
-                        </Col>
-                        <hr style={{
-                            color: 'black',
-                            backgroundColor: 'black',
-                            height: 3,
-                            borderColor: '#000000'
-                        }} />
-                    </Row>
-                    {/* <hr style={{
-                    color: 'black',
-                    backgroundColor: 'black',
-                    height: 1,
-                    borderColor: '#000000'
-                }} /> */}
-                </div>
-                {/* <hr style={{
-                    color: 'black',
-                    backgroundColor: 'black',
-                    height: 1,
-                    borderColor: '#000000'
-                }} /> */}
-                <div className="Publications">
-                    <h5>Publications</h5>
-                    <Row>
-                        <Col>
-                            <ul>
-                                <li>Advanced analysts of damping motion</li>
-                                Mentors
+                                <li>{props.internship_title}</li>
+                                {props.internship}
 
                             </ul>
                         </Col>
                         <Col>
-                            <p style={{ textAlign: 'right' }}>PCES 2010</p>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <ul>
-                                <li>Efficient ranking of search results</li>
-                                Mentors
-                            </ul>
-                        </Col>
-                        <Col>
-                            <p style={{ textAlign: 'right' }}>LOCS 2010</p>
+                            <p style={{ margin: '0', textAlign: 'right' }}>{props.internship_date}</p>
+                            <p style={{ margin: '0', textAlign: 'right' }}>{props.internshipCompany}</p>
+
                         </Col>
                         <hr style={{
                             color: 'black',
@@ -164,80 +154,70 @@ const Resume2_Template = (props : Props) => {
                             borderColor: '#000000'
                         }} />
                     </Row>
+
                 </div>
+
+
                 <div className='Projects'>
                     <h5>Projects</h5>
                     <Row>
                         <Col>
                             <ul>
                                 <li>
-                                    <p style={{fontWeight:'bold', margin:'0'}}>Project title</p>
-                                    Dr.XYZ, Associate Professor, Dept. of XXX, IIT Guwahati
-                                    Graphical interface to share files over institute's network.
+                                    <p style={{ fontWeight: 'bold', margin: '0' }}>{props.project1Title}</p>
+                                    {props.project1}
                                 </li>
                             </ul>
                         </Col>
                         <Col>
-                            <p style={{ margin: '0', textAlign: 'right' }}>Apr 2016</p>
-                            <p style={{ margin: '0', textAlign: 'right' }}>goo.gl/link</p>
+                            <p style={{ margin: '0', textAlign: 'right' }}>{props.project1Date}</p>
+                            <p style={{ margin: '0', textAlign: 'right' }}>{props.project1Link}</p>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
                             <ul>
                                 <li>
-                                    <p style={{fontWeight:'bold', margin:'0'}}>Project Title</p>
-                                    Graphical interface to share files over institute's network.
+                                    <p style={{ fontWeight: 'bold', margin: '0' }}>{props.project2Title}</p>
+                                    {props.project2}
                                 </li>
                             </ul>
                         </Col>
                         <Col>
-                            <p style={{ margin: '0', textAlign: 'right' }}>Jan 2016-Mar 2016</p>
-                            <p style={{ margin: '0', textAlign: 'right' }}>www.xyz.in</p>
+                            <p style={{ margin: '0', textAlign: 'right' }}>{props.project2Date}</p>
+                            <p style={{ margin: '0', textAlign: 'right' }}>{props.project2Link}</p>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
                             <ul>
                                 <li>
-                                    <p style={{fontWeight:'bold', margin:'0'}}>Project title</p>
-                                    Graphical interface to share files over institute's network.
+                                    <p style={{ fontWeight: 'bold', margin: '0' }}>{props.project3Title}</p>
+                                    {props.project3}
                                 </li>
                             </ul>
                         </Col>
                         <Col>
-                            <p style={{ margin: '0', textAlign: 'right' }}>Feb 2016</p>
-                            <p style={{ margin: '0', textAlign: 'right' }}>goo.gl/link</p>
+                            <p style={{ margin: '0', textAlign: 'right' }}>{props.project3Date}</p>
+                            <p style={{ margin: '0', textAlign: 'right' }}>{props.project3Link}</p>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
                             <ul>
                                 <li>
-                                    <p style={{fontWeight:'bold', margin:'0'}}>Project title</p>
-                                    Mentor Name
-                                    Graphical interface to share files over institute's network.
+                                    <p style={{ fontWeight: 'bold', margin: '0' }}>{props.project4Title}</p>
+                                    {props.project4}
                                 </li>
                             </ul>
                         </Col>
                         <Col>
-                            <p style={{ margin: '0', textAlign: 'right' }}>Nov 2015</p>
-                            <p style={{ margin: '0', textAlign: 'right' }}>github.com/link</p>
+                            <p style={{ margin: '0', textAlign: 'right' }}>{props.project4Date}</p>
+                            <p style={{ margin: '0', textAlign: 'right' }}>{props.project4Link}</p>
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            <ul>
-                                <li>
-                                    <p style={{fontWeight:'bold', margin:'0'}}>Project title</p>
-                                    Graphical interface to share files over institute's network.
-                                </li>
-                            </ul>
-                        </Col>
-                        <Col>
-                            <p style={{ margin: '0', textAlign: 'right' }}>Apr 2015-Sep 2015</p>
-                            <p style={{ margin: '0', textAlign: 'right' }}>goo.gl/link</p>
-                        </Col>
+
                         <hr style={{
                             color: 'black',
                             backgroundColor: 'black',
@@ -249,26 +229,15 @@ const Resume2_Template = (props : Props) => {
                 <div className='Technical Skills'>
                     <h5>Technical Skills</h5>
                     <ul>
-                        <li> <p>Programming languages:C++, Python, Java* </p></li>
-                        <li> <p>Web Technologies:HTML, CSS, JavaScript</p></li>
-                        <li> <p>Database management:mySQL</p></li>
-                        <li> <p>Miscellaneous:Android programming*</p></li>
-                        <li> <p>Operating system:Windows, Linux</p></li>
+                        <li> <p>Programming languages:{props.programmingSkill1}, {props.programmingSkill2}, {props.programmingSkill3} </p></li>
+                        <li> <p>Web Technologies:{props.webSkill1}, {props.webSkill2}, {props.webSkill3}</p></li>
+                        <li> <p>Database management:{props.databaseSkill1},{props.databaseSkill2},{props.databaseSkill3}</p></li>
+                        <li> <p>Miscellaneous:{props.misSkill1},{props.misSkill2}</p></li>
+                        <li> <p>Operating system:{props.osSkill1}, {props.osSkill2}</p></li>
                     </ul>
                 </div>
-                <hr style={{
-                    color: 'black',
-                    backgroundColor: 'black',
-                    height: 3,
-                    borderColor: '#000000'
-                }} />
-                <div className='Positions of Responsibility'>
-                    <h5>Positions of Responsibility</h5>
-                    <ul>
-                        <li>XYZ Head, ABC 2016(the annual XYZ of IIT Guwahati)</li>
-                        <li>City representative, New Delhi, ABC 2015</li>
-                    </ul>
-                </div>
+
+
                 <hr style={{
                     color: 'black',
                     backgroundColor: 'black',
@@ -280,23 +249,19 @@ const Resume2_Template = (props : Props) => {
                     <Row>
                         <Col>
                             <ul>
-                                <li style={{ fontWeight: 'bold' }}>ABC contest 2016:</li>Secured 1st position in the National level contest.
+                                <li style={{ fontWeight: 'bold' }}>{props.achievement1Title}:</li>{props.achievement1}
                             </ul>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
                             <ul>
-                                <li style={{ fontWeight: 'bold' }}>Joint Entrance Examination</li>Secured 1st position in the National level contest.
+                                <li style={{ fontWeight: 'bold' }}>{props.achievement2Title}</li>{props.achievement2}
                             </ul>
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            <ul>
-                                <li style={{ fontWeight: 'bold' }}>KVPY 2013-2014</li>Secured 1st position in the National level contest.
-                            </ul>
-                        </Col>
+
                         <hr style={{
                             color: 'black',
                             backgroundColor: 'black',
@@ -311,14 +276,14 @@ const Resume2_Template = (props : Props) => {
                         <Col>
                             <ul>
                                 <li>
-                                    Computer lab
+                                    {props.course1}
                                 </li>
                             </ul>
                         </Col>
                         <Col>
                             <ul>
                                 <li>
-                                    Advanced calculus
+                                    {props.course2}
                                 </li>
                             </ul>
                         </Col>
@@ -327,33 +292,20 @@ const Resume2_Template = (props : Props) => {
                         <Col>
                             <ul>
                                 <li>
-                                    Process design
+                                    {props.course3}
                                 </li>
                             </ul>
                         </Col>
                         <Col>
                             <ul>
                                 <li>
-                                    XYZ Architecture
+                                    {props.course4}
                                 </li>
                             </ul>
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            <ul>
-                                <li>
-                                    Statistics
-                                </li>
-                            </ul>
-                        </Col>
-                        <Col>
-                            <ul>
-                                <li>
-                                    ABC lab
-                                </li>
-                            </ul>
-                        </Col>
+
                         <hr style={{
                             color: 'black',
                             backgroundColor: 'black',
@@ -368,14 +320,14 @@ const Resume2_Template = (props : Props) => {
                         <Col>
                             <ul>
                                 <li>
-                                    Github://xyz
+                                    {props.link1}
                                 </li>
                             </ul>
                         </Col>
                         <Col>
                             <ul>
                                 <li>
-                                    CodeChef://xyz
+                                    {props.link2}
                                 </li>
                             </ul>
                         </Col>
@@ -384,33 +336,20 @@ const Resume2_Template = (props : Props) => {
                         <Col>
                             <ul>
                                 <li>
-                                    LinkedIn://xyz
+                                    {props.link3}
                                 </li>
                             </ul>
                         </Col>
                         <Col>
                             <ul>
                                 <li>
-                                    HackerRank://xyz
+                                    {props.link4}
                                 </li>
                             </ul>
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            <ul>
-                                <li>
-                                    Medium://xyz
-                                </li>
-                            </ul>
-                        </Col>
-                        <Col>
-                            <ul>
-                                <li>
-                                    Web-Page://xyz.github.io
-                                </li>
-                            </ul>
-                        </Col>
+
                         <hr style={{
                             color: 'black',
                             backgroundColor: 'black',
@@ -422,10 +361,10 @@ const Resume2_Template = (props : Props) => {
                 <div className="Hobbies">
                     <h5>Hobbies</h5>
                     <ul>
-                        <li>PHOTOGRAPHY</li>
-                        <li>QUORA WRITING</li>
-                        <li>VIDEO EDITING</li>
-                        <li>WATCHING STANDUP COMEDY</li>
+                        <li>{props.hobbies1}</li>
+                        <li>{props.hobbies2}</li>
+                        <li>{props.hobbies3}</li>
+                        <li>{props.hobbies1}</li>
                     </ul>
                 </div>
             </Container>
