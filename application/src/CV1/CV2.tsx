@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import "../CV1/CV2.css";
 const CV2 = () => {
     return (
         <React.Fragment>
