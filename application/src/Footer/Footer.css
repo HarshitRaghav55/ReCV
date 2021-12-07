@@ -1,5 +1,5 @@
 .footer-distributed {
-    background-color: black;
+    background-color: red;
     box-sizing: border-box;
     width: 100%;
     text-align: left;
@@ -13,7 +13,7 @@
 .footer-distributed .footer-bck .footer-right {
     display: inline-block;
     vertical-align: top;
-    background-color: black;
+    background-color: darkgreen;
     padding: 20px;
 
 }
@@ -33,7 +33,7 @@
 }
 
 .footer-distributed h3 {
-    color: black;
+    color: saddlebrown;
     font: normal 36px 'Cookie', cursive;
     margin: 0;
 }
@@ -45,7 +45,7 @@
 }
 
 .footer-distributed h3 span {
-    color: #e0ac1c;
+    color: orangered;
 }
 
 /* Footer links */
@@ -63,7 +63,7 @@
 }
 
 .footer-distributed .footer-bck .footer-company-name {
-    color: black;
+    color: darkkhaki;
     font-size: 14px;
     font-weight: normal;
     margin: 0;
@@ -78,7 +78,7 @@
 
 .footer-distributed .footer-bck .footer-center i {
     background-color: black;
-    color: black;
+    color: yellow;
     font-size: 25px;
     width: 38px;
     height: 38px;
