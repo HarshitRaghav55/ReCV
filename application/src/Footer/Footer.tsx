@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Footer/'
+import '../Footer/Footer.css';
 const Footer = () => {
     return (
         <React.Fragment>
