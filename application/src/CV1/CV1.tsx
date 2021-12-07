@@ -1,6 +1,6 @@
 import React from "react"
 import "../CV1/style.css"
-function CV1() {
+const CV1 = () => {
     return (
         <React.Fragment>
 
