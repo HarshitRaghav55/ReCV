@@ -1,5 +1,5 @@
 import React from "react";
-import "../Resume_Templates/ResumeFormat1/ResumeFormat1.css";
+import "../ResumeFormat1/ResumeFormat1.css";
 const ResumeFormat1 = () => {
     return (
         <React.Fragment>
