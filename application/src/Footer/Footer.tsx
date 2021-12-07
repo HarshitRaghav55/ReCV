@@ -1,10 +1,10 @@
-import React from "react";
+import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../Footer/Footer.css"
+import '../Footer/Footer.css';
 const Footer = () => {
     return (
         <React.Fragment>
-            <div className="footer-distributed"  >
+        <div className="footer-distributed"  >
 
 <div className="footer-left">
     <img src="public/logoo.png" />
@@ -58,4 +58,4 @@ const Footer = () => {
         </React.Fragment>
     );
 }
-export default Footer;
+export default Footer; 
