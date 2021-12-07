@@ -19,7 +19,7 @@
 }
 
 .footer-bck {
-    background-color: darkblue;
+    background-color: orangered;
     margin: 0;
     padding: 0;
     width: 1790px;
@@ -51,7 +51,7 @@
 /* Footer links */
 
 .footer-distributed .footer-bck .footer-links {
-    color: darkblue;
+    color: white;
     margin: 20px 0 12px;
 }
 
