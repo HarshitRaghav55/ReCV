@@ -52,7 +52,7 @@ const CV2 = () => {
                         <dt className="sidebar__title clearfix"><i className="fas fa-wrench"></i> Skills</dt>
                         <dd id="cv__skills">
                             <div className="cv__info">
-                                <span>CSS and SASS </span>
+                                <span>CSS  </span>
                                 <div className="btn-block">
                                     <button className="icon"><i className="fas fa-paint-brush"></i></button>
                                     <button className="icon"><i className="fas fa-trash"></i></button>
