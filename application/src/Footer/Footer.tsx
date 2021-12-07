@@ -1,10 +1,10 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../Footer/Footer.css"
+import '../Footer/'
 const Footer = () => {
     return (
         <React.Fragment>
-            <div className="footer-distributed"  >
+        <div className="footer-distributed"  >
 
 <div className="footer-left">
     <img src="public/logoo.png" />

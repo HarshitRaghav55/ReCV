@@ -128,7 +128,7 @@ width: 30%;
 }
 
 .footer-distributed h3 {
-color: #ffffff;
+color: whitesmoke;
 font: normal 36px 'Cookie', cursive;
 margin: 0;
 }
@@ -140,7 +140,7 @@ width: 30%;
 }
 
 .footer-distributed h3 span {
-color: #e0ac1c;
+color: orange;
 }
 
 /* Footer links */
@@ -191,7 +191,7 @@ line-height: 38px;
 
 .footer-distributed .footer-center p {
 display: inline-block;
-color: #ffffff;
+color: white;
 vertical-align: middle;
 margin: 0;
 }
@@ -204,7 +204,7 @@ line-height: 2;
 }
 
 .footer-distributed .footer-center p a {
-color: #e0ac1c;
+color: orange;
 text-decoration: none;
 ;
 }
@@ -241,11 +241,11 @@ display: inline-block;
 width: 35px;
 height: 35px;
 cursor: pointer;
-background-color: #33383b;
+background-color: black;
 border-radius: 2px;
 
 font-size: 20px;
-color: #ffffff;
+color: white;
 text-align: center;
 line-height: 35px;
 
