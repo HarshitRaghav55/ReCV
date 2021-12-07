@@ -22,5 +22,5 @@
   },
   "include": [
     "src/*"
-, "src/Resume_Templates/Resume_Templates2"  ]
+  ]
 }

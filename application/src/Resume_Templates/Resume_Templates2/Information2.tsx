@@ -3,10 +3,10 @@ import { Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import Header from '../../Header/Header';
-import InternshalaResume from './InternshalaResume';
+import Resume2_Template from './Resume2_Template';
 
 
-const Information = () => {
+const Information2 = () => {
 
 
     const [name, setName] = useState("");
@@ -60,8 +60,8 @@ const Information = () => {
             setFormSubmitted(true);
         }
     }
-    
-    
+
+
     return (
 
         <React.Fragment>
@@ -258,8 +258,9 @@ const Information = () => {
                 </>
 
 
-                : <InternshalaResume name={name}
-                    email={email}            
+                : <Resume2_Template
+                    name={name}
+                    email={email}
                     mobileNumber={mobileNumber!}
                     skill1={skill1}
                     skill2={skill2}
@@ -271,7 +272,7 @@ const Information = () => {
                     skill4_level={skill4_level}
                     internship={internship}
                     internship_date={internship_date}
-                    internship_title={internship_Title}                    
+                    internship_title={internship_Title}
                     educationBachelor_University={educationBachelor_University}
                     educationBachelor={educationBachelor}
                     educationBachelor_date={educationBachelor_date!}
@@ -298,4 +299,4 @@ const Information = () => {
 
 
 }
-export default Information;
+export default Information2;

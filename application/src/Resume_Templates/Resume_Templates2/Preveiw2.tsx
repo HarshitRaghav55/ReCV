@@ -1,47 +1,11 @@
-import React from 'react';
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Table, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { fontWeight } from 'html2canvas/dist/types/css/property-descriptors/font-weight';
-type Props = {
-    name: string,
-    email: string,
-    mobileNumber: number,
-    educationBachelor?: string,
-    educationBachelor_date?: number,
-    educationBachelor_University?: string,
-    educationMasters?: string,
-    educationMasters_date?: number,
-    educationMasters_University?: string,
-    education_HighSchool?: string,
-    education_HighSchool_Board?: string,
-    education_HighSchool_date?: number,
-    education_Intermediate_Board?: string,
-    education_Intermediate_Branch?: string,
-    education_Intermediate_date?: number,
-    education_Intermediate_School?: string,
-    internship?: string,
-    internship_title?: string,
-    internship_date?: string,
-    trainingAndCourse_date?: string,
-    trainingAndCourse?: string,
-    trainingAndCourse_title?: string,
-    project1?: string,
-    skill1?: string,
-    skill2?: string,
-    skill3?: string,
-    skill4?: string,
-    skill1_level?: string,
-    skill2_level?: string,
-    skill3_level?: string,
-    skill4_level?: string,
-    summary?: string,
-    extraCurricular?: string,
-    city?: string
-};
-const Resume2_Template = (props : Props) => {
-    return (
+const Preveiw2 = () => {
+    return(
         <React.Fragment>
             <Container>
                 <div className='details' style={{ justifyContent: 'center', textAlign: 'center' }}>
@@ -432,5 +396,4 @@ const Resume2_Template = (props : Props) => {
         </React.Fragment>
     );
 }
-
-export default Resume2_Template;
+export default Preveiw2;
