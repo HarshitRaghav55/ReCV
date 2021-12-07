@@ -98,7 +98,7 @@ const Cards = () => {
                                             the card's content.
                                         </Card.Text>
                                         <Link to="/Information"><Button variant="primary"> Make Resume </Button> </Link>
-                                        <Link to="/"><Button variant="primary" style={{ margin: '1%' }}> Preview </Button></Link>
+                                        <Link to="/CV2"><Button variant="primary" style={{ margin: '1%' }}> Preview </Button></Link>
                                     </Card.Body>
                                 </Card>
                             </Col>
