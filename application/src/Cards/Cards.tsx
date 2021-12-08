@@ -18,8 +18,8 @@ const Cards = () => {
                                             Some quick example text to build on the card title and make up the bulk of
                                             the card's content.
                                         </Card.Text>
-                                        <Link to="/Generate"><Button variant="primary"> Make Resume </Button> </Link>
-                                        <Link to="/ResumeFormat1"><Button variant="primary">Preview</Button> </Link>
+                                        <Link to="/Information1"><Button variant="primary"> Make Resume </Button> </Link>
+                                        <Link to="/Preview1"><Button variant="primary">Preview</Button> </Link>
                                     </Card.Body>
                                 </Card>
                             </Col>

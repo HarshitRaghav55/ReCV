@@ -1,43 +1,5 @@
-import React from "react";
-import jsPDF from 'jspdf';
-import html2canvas from "html2canvas";
-type Props = {
-    name: string,
-    email: string,
-    mobileNumber: number,
-    objective: string,
-    educationBachelor?: string,
-    educationMasters?: string,
-    educationHighSchool?: string,
-    educationIntermediate?: string,
-    internship1?: string,
-    internship2?: string,
-    internship1Title?: string,
-    internship2Title?: string,
-    project1?: string,
-    project1Title?: string,
-    project2?: string,
-    project2Title?: string,
-    skill1?: string,
-    skill2?: string,
-    skill3?: string,
-    link1?: string,
-    link2?: string,
-    address?: string
-};
-const ResumeFormat1: React.FC<Props> = (props: Props) => {
-    const printResume = () => {
-
-        const input = document.getElementById('PrintResume');
-        html2canvas(input!)
-            .then((canvas) => {
-                const imgData = canvas.toDataURL('image/png');
-                const pdf = new jsPDF();
-                pdf.addImage(imgData, 'JPEG', 0, 10, 200, 200);
-                pdf.save("download.pdf");
-            });
-    }
-
+import React from "react"
+const Preview1 = () => {
     return (
         <React.Fragment>
             {/* <!--cv-template--> */}
@@ -50,19 +12,19 @@ const ResumeFormat1: React.FC<Props> = (props: Props) => {
                         <img src="defaultProfilePicture.jpg" alt="" className="img-fluid my-img" id="imgTemplate" />
 
                         <div className="container">
-                            <p id="nameT1">{props.name}</p>
-                            <p id="contactT">{props.mobileNumber}</p>
-                            <p id="addressT">{props.address}</p>
+                            <p id="nameT1">saksham</p>
+                            <p id="contactT">+91-12343545,+91-234235564</p>
+                            <p id="addressT">12, sector43, jagriti vihar, saharanpur</p>
                             <hr />
 
-                            <p><a id="linkedT" href="#1">{props.link1}</a></p>
-                            <p><a id="gitT" href="#2">{props.link2}</a></p>
+                            <p><a id="linkedT" href="#1">https://www.linkedin.com/home</a></p>
+                            <p><a id="gitT" href="#2">https://github.com/</a></p>
                         </div>
                     </div>
 
                     <div className="col-md-8 py-5" >
                         {/* <!--second column--> */}
-                        <h1 id="nameT2" className="text-center" >{props.name}</h1>
+                        <h1 id="nameT2" className="text-center" >saksham</h1>
                         {/* style="font-weight: 980" */}
 
                         <div className="card mt-4">
@@ -70,7 +32,7 @@ const ResumeFormat1: React.FC<Props> = (props: Props) => {
                                 <h3>Objective</h3>
                             </div>
                             <div className="card-body">
-                                <p id="objectiveT">{props.objective}</p>
+                                <p id="objectiveT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consectetur animi ut facere minima sit nobis quo at ullam, modi aliquid corporis dicta. Quidem eveniet, nihil consectetur, dolores reprehenderit provident deleniti quo fugit doloribus repellat est adipisci quae et incidunt, doloremque accusantium beatae placeat! Reprehenderit ratione dignissimos exercitationem ipsa hic.</p>
                             </div>
                         </div>
 
@@ -81,18 +43,18 @@ const ResumeFormat1: React.FC<Props> = (props: Props) => {
                             <div className="card-body">
                                 <ul id="weT">
                                     <li>
-                                        {props.project1Title}
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, doloribus.
                                         <ul id="weT">
                                             <li>
-                                                {props.project1}
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, doloribus.
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
-                                        {props.project2Title}
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, doloribus.
                                         <ul id="weT">
                                             <li>
-                                                {props.project2}
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, doloribus.
                                             </li>
                                         </ul>
                                     </li>
@@ -106,14 +68,9 @@ const ResumeFormat1: React.FC<Props> = (props: Props) => {
                             </div>
                             <div className="card-body">
                                 <ul id="weT">
-                                    <li>{props.internship1Title}</li>
-                                    <ul id="weT">
-                                        <li> {props.internship1} </li>
-                                    </ul>
-                                    <li>{props.internship2Title}</li>
-                                    <ul>
-                                        <li>{props.internship2}</li>
-                                    </ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, doloribus.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, doloribus.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, doloribus.</li>
                                 </ul>
                             </div>
                         </div>
@@ -126,10 +83,9 @@ const ResumeFormat1: React.FC<Props> = (props: Props) => {
                             </div>
                             <div className="card-body">
                                 <ul id="aqT">
-                                    <li>{props.educationMasters}</li>
-                                    <li>{props.educationBachelor}</li>
-                                    <li>{props.educationIntermediate}</li>
-                                    <li>{props.educationHighSchool}</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, doloribus.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, doloribus.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, doloribus.</li>
                                 </ul>
                             </div>
                         </div>
@@ -140,21 +96,24 @@ const ResumeFormat1: React.FC<Props> = (props: Props) => {
                             </div>
                             <div className="card-body">
                                 <ul id="skT">
-                                    <li> {props.skill1} </li>
-                                    <li> {props.skill2} </li>
-                                    <li> {props.skill3} </li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, doloribus.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, doloribus.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, doloribus.</li>
                                 </ul>
                             </div>
                         </div>
 
-
+                        <div className="container mt-3 text-center">
+                            <button className="btn background">
+                                Print CV
+                            </button>
+                        </div>
                     </div>
 
                 </div>
 
             </div>
-            <button className="btn btn-primary" onClick={printResume}>Export To PDF</button>
         </React.Fragment>
     );
 }
-export default ResumeFormat1;
+export default Preview1;
