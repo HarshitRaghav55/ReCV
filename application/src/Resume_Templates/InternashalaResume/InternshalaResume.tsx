@@ -3,10 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from "react-bootstrap";
 // import styles from './appStyles.module.css'
 import jsPDF from 'jspdf';
-// import pdfMake from 'pdfmake/build/pdfmake';
-// import pdfFonts from 'pdfmake/build/vfs_fonts';
-// import htmlToPdfmake from 'html-to-pdfmake';
-// import { listeners } from "process";
+    // import pdfMake from 'pdfmake/build/pdfmake';
+    // import pdfFonts from 'pdfmake/build/vfs_fonts';
+    // import htmlToPdfmake from 'html-to-pdfmake';
+    // import { listeners } from "process";
 import html2canvas from "html2canvas";
 
 type Props = {

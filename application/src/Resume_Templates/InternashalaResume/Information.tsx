@@ -239,18 +239,7 @@ const Information = () => {
                                 </Row>
                             </Form.Group>
                         </Form>
-                        <Form >
-                            <Form.Group className="mb-2" controlId="exampleForm.ControlTextarea1">
-                                <Form.Label style={{ color: 'darkblue' }}>EXTRA/CO-CURRICULAR ACTIVITIES</Form.Label>
-                                <Form.Control as="textarea" value={extraCurricular} onChange={event => setExtraCurricular(event.target.value)} rows={2} />
-                            </Form.Group>
-                        </Form>
-                        <Form >
-                            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                <Form.Label style={{ color: 'darkblue' }}>Summary</Form.Label>
-                                <Form.Control as="textarea" value={summary} onChange={event => setSummary(event.target.value)} rows={3} />
-                            </Form.Group>
-                        </Form>
+                        
                         <div className="form-group">
                             <button type="button" onClick={submit} className="btn btn-primary btn-lg">Submit</button>
                         </div>
