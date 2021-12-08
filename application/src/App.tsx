@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Resume from './Resume/Resume';
 import { Routes,Route } from 'react-router-dom';
 import Generate from './Resume_Templates/ResumeFormat1/Generate'
+import Information2 from "./Resume_Templates/Resume_Templates2/Information2"
 import Home from './Content/Home'
 import Preveiw from "./Resume_Templates/InternashalaResume/Preview"
 import Information from "./Resume_Templates/InternashalaResume/Information"
@@ -32,6 +33,7 @@ const  App = () => {
         <Route path = "Preview2" element = {<Preview2 />} />
         <Route path = "/CV1" element = {<CV1 />} />
         <Route path = "/CV2" element = {<CV2 />} />
+        <Route path = "/ResumeFormat2Information" element ={<Information2 />} />
         <Route path = "/SignUp" element = {<SignUp /> } />
         <Route path = "/Cv1_template" element = {<Cv1_template />} />
         

@@ -39,6 +39,18 @@ const Information2 = () => {
     const [project2, setProject2] = useState("");
     const [project3, setProject3] = useState("");
     const [project4, setProject4] = useState("");
+    const [project1Link, setProject1Link] = useState("");
+    const [project2Link, setProject2Link] = useState("");
+    const [project3Link, setProject3Link] = useState("");
+    const [project4Link, setProject4Link] = useState("");
+    const [project1Date, setProject1Date] = useState("");
+    const [project2Date, setProject2Date] = useState("");
+    const [project3Date, setProject3Date] = useState("");
+    const [project4Date, setProject4Date] = useState("");
+    const [project1Title, setProject1Title] = useState("");
+    const [project2Title, setProject2Title] = useState("");
+    const [project3Title, setProject3Title] = useState("");
+    const [project4Title, setProject4Title] = useState("");
     const [progSkill1, setProgSkill1] = useState("");
     const [progSkill2, setProgSkill2] = useState("");
     const [progSkill3, setProgSkill3] = useState("");
@@ -55,6 +67,9 @@ const Information2 = () => {
     const [internshipCompany, setInternshipCompany] = useState("");
     const [achievement1, setAchievement1] = useState("");
     const [achievement1Title, setAchievement1Title] = useState("");
+    const [achievement2, setAchievement2] = useState("");
+    const [achievement2Title, setAchievement2Title] = useState("");
+    
     const [link1, setLink1] = useState("");
     const [link2, setLink2] = useState("");
     const [link3, setLink3] = useState("");
@@ -65,7 +80,7 @@ const Information2 = () => {
     const [hobbies4, setHobbies4] = useState("");
 
 
-
+    
 
     const [formSubmitted, setFormSubmitted] = useState(false);
     const submit = (e: any) => {
@@ -256,14 +271,82 @@ const Information2 = () => {
 
                             <Form.Group className="mb-2" controlId="exampleForm.ControlTextarea1">
                                 <h4> <Form.Label style={{ color: 'darkblue' }}>PROJECTS</Form.Label></h4>
-                                <Form.Label style={{ color: 'darkblue' }}>PROJECT 1</Form.Label>
-                                <Form.Control as="textarea" value={project1} onChange={event => setProject1(event.target.value)} rows={2} />
-                                <Form.Label style={{ color: 'darkblue' }}>PROJECT 2</Form.Label>
-                                <Form.Control as="textarea" value={project2} onChange={event => setProject2(event.target.value)} rows={2} />
-                                <Form.Label style={{ color: 'darkblue' }}>PROJECT 3</Form.Label>
-                                <Form.Control as="textarea" value={project3} onChange={event => setProject3(event.target.value)} rows={2} />
-                                <Form.Label style={{ color: 'darkblue' }}>PROJECT 4</Form.Label>
-                                <Form.Control as="textarea" value={project4} onChange={event => setProject4(event.target.value)} rows={2} />
+                                <h5><Form.Label style={{ color: 'darkblue' }}>PROJECT 1</Form.Label></h5>
+                                <Row>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>PROJECT 1 Title</Form.Label>
+                                        <Form.Control as="textarea" value={project1Title} onChange={event => setProject1Title(event.target.value)} rows={1} />
+                                    </Col>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>PROJECT 1 Date</Form.Label>
+                                        <Form.Control as="textarea" value={project1Date} onChange={event => setProject1Date(event.target.value)} rows={1} />
+                                    </Col>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>PROJECT 1 Link</Form.Label>
+                                        <Form.Control as="textarea" value={project1Link} onChange={event => setProject1Link(event.target.value)} rows={1} />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Form.Label style={{ color: 'darkblue' }}>PROJECT 1 Description</Form.Label>
+                                    <Form.Control as="textarea" value={project1} onChange={event => setProject1(event.target.value)} rows={2} />
+
+                                </Row>
+                                <h5><Form.Label style={{ color: 'darkblue' }}>PROJECT 2</Form.Label></h5>
+                                <Row>
+                                    <Form.Label style={{ color: 'darkblue' }}>PROJECT 2 Title</Form.Label>
+                                    <Form.Control as="textarea" value={project2Title} onChange={event => setProject2Title(event.target.value)} rows={1} />
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>PROJECT 2 Date</Form.Label>
+                                        <Form.Control as="textarea" value={project2Date} onChange={event => setProject2Date(event.target.value)} rows={1} />
+                                    </Col>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>PROJECT 2 Link</Form.Label>
+                                        <Form.Control as="textarea" value={project2Link} onChange={event => setProject2Link(event.target.value)} rows={1} />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Form.Label style={{ color: 'darkblue' }}>PROJECT 2 Description</Form.Label>
+                                    <Form.Control as="textarea" value={project2} onChange={event => setProject2(event.target.value)} rows={2} />
+                                </Row>
+
+                                <h5><Form.Label style={{ color: 'darkblue' }}>PROJECT 3</Form.Label></h5>
+                                <Row>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>PROJECT 3 Title</Form.Label>
+                                        <Form.Control as="textarea" value={project3Title} onChange={event => setProject3Title(event.target.value)} rows={1} />
+                                    </Col>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>PROJECT 3 Date</Form.Label>
+                                        <Form.Control as="textarea" value={project3Date} onChange={event => setProject3Date(event.target.value)} rows={1} />
+                                    </Col>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>PROJECT 3 Link</Form.Label>
+                                        <Form.Control as="textarea" value={project3Link} onChange={event => setProject3Link(event.target.value)} rows={1} />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Form.Label style={{ color: 'darkblue' }}>PROJECT 3 Description</Form.Label>
+                                    <Form.Control as="textarea" value={project3} onChange={event => setProject3(event.target.value)} rows={2} />
+                                </Row>
+                                <h5><Form.Label style={{ color: 'darkblue' }}>PROJECT 4</Form.Label></h5>
+                                <Row>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>PROJECT 4 Title</Form.Label>
+                                        <Form.Control as="textarea" value={project4Title} onChange={event => setProject4Title(event.target.value)} rows={1} />
+                                    </Col>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>PROJECT 4 Date</Form.Label>
+                                        <Form.Control as="textarea" value={project4Date} onChange={event => setProject4Date(event.target.value)} rows={1} />
+                                    </Col>
+                                    <Col>
+                                        <Form.Label style={{ color: 'darkblue' }}>PROJECT 4 Link</Form.Label>
+                                        <Form.Control as="textarea" value={project4Link} onChange={event => setProject4Link(event.target.value)} rows={1} />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Form.Label style={{ color: 'darkblue' }}>PROJECT 4 Description</Form.Label>
+                                    <Form.Control as="textarea" value={project4} onChange={event => setProject4(event.target.value)} rows={2} />
+                                </Row>
                             </Form.Group>
                         </Form>
                         <Form >
@@ -367,6 +450,20 @@ const Information2 = () => {
                                 <Form.Control as="textarea" value={hobbies4} onChange={event => setHobbies4(event.target.value)} rows={2} />
                             </Form.Group>
                         </Form>
+                        <Form >
+                            <Form.Group className="mb-2" controlId="exampleForm.ControlTextarea1">
+                                <h4><Form.Label style={{ color: 'darkblue' }}>Achievement 1</Form.Label></h4>
+                                <Form.Label style={{ color: 'darkblue' }}>Achievement 1 Title</Form.Label>
+                                <Form.Control as="textarea" value={achievement1Title} onChange={event => setAchievement1Title(event.target.value)} rows={1} />
+                                <Form.Label style={{ color: 'darkblue' }}>Achievement 1 Description</Form.Label>
+                                <Form.Control as="textarea" value={achievement1} onChange={event => setAchievement1(event.target.value)} rows={2} />
+                                <Form.Label style={{ color: 'darkblue' }}>Achievement 2 Title</Form.Label>
+                                <Form.Control as="textarea" value={achievement2Title} onChange={event => setAchievement2Title(event.target.value)} rows={1} />
+                                <Form.Label style={{ color: 'darkblue' }}>Achievement 2 Description</Form.Label>
+                                <Form.Control as="textarea" value={achievement2} onChange={event => setAchievement2(event.target.value)} rows={2} />
+                            </Form.Group>
+                        </Form>
+                        
 
 
                         <div className="form-group">
@@ -384,6 +481,14 @@ const Information2 = () => {
                     internship={internship}
                     internship_date={internship_date}
                     internship_title={internship_Title}
+                    project1={project1}
+                    project1Title={project1Title}
+                    project2Title={project2Title}
+                    project2={project2}
+                    project3={project3}
+                    project3Title={project3Title}
+                    project4Title={project4Title}
+                    project4={project4}
                     educationBachelor_University={educationBachelor_University}
                     educationBachelor={educationBachelor}
                     educationBachelor_date={educationBachelor_date!}
@@ -397,8 +502,35 @@ const Information2 = () => {
                     education_Intermediate_Board={educationIntermediate_Board}
                     education_Intermediate_Branch={educationIntermediate_Branch}
                     education_Intermediate_date={educationIntermediate_date!}
-
-
+                    course1={course1}
+                    course2={course2}
+                    course3={course3}
+                    course4={course4}
+                    programmingSkill1={progSkill1}
+                    programmingSkill2={progSkill2}
+                    programmingSkill3={progSkill3}
+                    databaseSkill1={dataSkill1}
+                    databaseSkill2={dataSkill2}
+                    databaseSkill3={dataSkill3}
+                    webSkill1={webSkill1}
+                    webSkill2={webSkill2}
+                    webSkill3={webSkill3}
+                    misSkill1={misSkill1}
+                    misSkill2={misSkill2}
+                    osSkill1={osSkill1}
+                    osSkill2={osSkill2}
+                    hobbies1={hobbies1}
+                    hobbies2={hobbies2}
+                    hobbies3={hobbies3}
+                    hobbies4={hobbies4}
+                    link1={link1}
+                    link2={link2}
+                    link3={link3}
+                    link4={link4}
+                    achievement1={achievement1}
+                    achievement1Title={achievement1Title}
+                    achievement2={achievement2}
+                    achievement2Title={achievement2Title}
 
                 />
 

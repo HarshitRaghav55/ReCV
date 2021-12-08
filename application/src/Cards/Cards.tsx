@@ -46,7 +46,7 @@ const Cards = () => {
                                             Some quick example text to build on the card title and make up the bulk of
                                             the card's content.
                                         </Card.Text>
-                                        <Button variant="primary">Make Resume</Button>
+                                        <Link to ="/ResumeFormat2Information" ><Button variant="primary">Make Resume</Button> </Link>
                                         <Link to="/Preview2"><Button variant="primary" >Preview</Button></Link>
                                     </Card.Body>
                                 </Card>

@@ -1,9 +1,8 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Table, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import { fontWeight } from 'html2canvas/dist/types/css/property-descriptors/font-weight';
+
 const Preview2 = () => {
     return(
         <React.Fragment>
