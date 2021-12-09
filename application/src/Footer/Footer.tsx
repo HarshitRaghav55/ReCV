@@ -1,5 +1,6 @@
 import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import image1 from '../Footer/logoo.png';
 import '../Footer/Footer.css';
 const Footer = () => {
     return (
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className="footer-distributed"  >
 
 <div className="footer-left">
-    <img src="public/logoo.png" />
+    <img src={image1} />
     <h3>About&nbsp;<br /><span>ReCV</span></h3>
 
     <p className="footer-links">
