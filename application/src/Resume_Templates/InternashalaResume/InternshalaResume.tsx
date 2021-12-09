@@ -1,12 +1,8 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from "react-bootstrap";
-// import styles from './appStyles.module.css'
-import jsPDF from 'jspdf';
-    // import pdfMake from 'pdfmake/build/pdfmake';
-    // import pdfFonts from 'pdfmake/build/vfs_fonts';
-    // import htmlToPdfmake from 'html-to-pdfmake';
-    // import { listeners } from "process";
+
+import jsPDF from 'jspdf';    
 import html2canvas from "html2canvas";
 
 type Props = {
@@ -47,21 +43,9 @@ type Props = {
 };
 
 const InternshalaResume = (props: Props) => {
-    // const pdfResume = document.getElementById('PrintResume');
+    
     const printResume = () => {
-        // const doc = new jsPDF();
-
-        //   { //get table html
-        // const pdfResume = document.getElementById('PrintResume');
-        // html to pdf format
-        //    }
-        // if(document.getElementById(""))
-        // const pdfResume = document.getElementById('PrintResume');
-        // var html = htmlToPdfmake(pdfResume!.innerHTML);
-
-        // const documentDefinition = { content: html };
-        // pdfMake.vfs = pdfFonts.pdfMake.vfs;
-        // pdfMake.createPdf(documentDefinition).download('resume.pdf');
+       
         const input = document.getElementById('PrintResume');
         html2canvas(input!)
             .then((canvas) => {

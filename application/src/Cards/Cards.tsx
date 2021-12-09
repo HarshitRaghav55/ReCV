@@ -69,8 +69,8 @@ const Cards = () => {
                                             the card's content.
                                         </Card.Text>
                                         
-                                        <Link to="/Information"><Button variant="primary"> Make CV </Button> </Link>
-                                        <Link to="/Cv1_template"><Button variant="primary">Preview</Button> </Link>
+                                        <Link to="/CV1"><Button variant="primary"> Make CV </Button> </Link>
+                                        <Link to="/PreviewCV1"><Button variant="primary">Preview</Button> </Link>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -92,7 +92,7 @@ const Cards = () => {
                                 <Card className="mb-2">
                                 
                                     <Card.Body>
-                                        <Card.Title>Card Title</Card.Title>
+                                        <Card.Title>CV Format 3</Card.Title>
                                         <Card.Text>
                                             Some quick example text to build on the card title and make up the bulk of
                                             the card's content.
