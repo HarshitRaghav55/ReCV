@@ -83,8 +83,8 @@ const Cards = () => {
                                             Some quick example text to build on the card title and make up the bulk of
                                             the card's content.
                                         </Card.Text>
-                                        <Link to="/Information"><Button variant="primary"> Make Resume </Button> </Link>
-                                        <Link to="/CV1"><Button variant="primary" style={{ margin: '1%' }}>preview</Button> </Link>
+                                        <Link to="/InformationCV2"><Button variant="primary"> Make Resume </Button> </Link>
+                                        <Link to="/PreviewCV2"><Button variant="primary" style={{ margin: '1%' }}>preview</Button> </Link>
                                     </Card.Body>
                                 </Card>
                             </Col>

@@ -103,11 +103,7 @@ const Preview1 = () => {
                             </div>
                         </div>
 
-                        <div className="container mt-3 text-center">
-                            <button className="btn background">
-                                Print CV
-                            </button>
-                        </div>
+                        
                     </div>
 
                 </div>
