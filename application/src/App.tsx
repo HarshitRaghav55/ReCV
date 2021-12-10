@@ -17,7 +17,7 @@ import Preview2 from './Resume_Templates/Resume_Templates2/Preview2';
 import SignUp from "./signup/SignUp"
 import Preview1 from "./Resume_Templates/ResumeFormat1/Preview1"
 // import Auth from "./signup/useAuth"
-import Cv1_template from './CV1/Cv1_template';
+
 const App = () => {
   return (
     <React.Fragment>
