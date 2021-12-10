@@ -17,6 +17,8 @@ import Preview2 from './Resume_Templates/Resume_Templates2/Preview2';
 import SignUp from "./signup/SignUp"
 import Preview1 from "./Resume_Templates/ResumeFormat1/Preview1"
 // import Auth from "./signup/useAuth"
+import PreviewCV3 from "./CV/CV3/PreviewCV3"
+import InformationCV3 from './CV/CV3/InformationCV3';
 
 const App = () => {
   return (
@@ -26,9 +28,10 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/Resume" element={<Resume />} />
         <Route path="/Information" element={<Information />} />
-
+        <Route path="/PreviewCV3" element={<PreviewCV3 />} />
         <Route path="/Information1" element={<Information1 />} />
         <Route path="/InformationCV2" element={<InformationCV2 />} />
+        <Route path="/InformationCV3" element={<InformationCV3 />} />
         <Route path="/Resume2_Template" element={<Resume2_Template />} />
         <Route path="/Preveiw" element={<Preveiw />} />
         <Route path="/Preview2" element={<Preview2 />} />

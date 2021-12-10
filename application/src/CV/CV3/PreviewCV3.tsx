@@ -1,41 +1,11 @@
-import React from "react";
-import "../CV1/style.css";
-const CV1 = () => {
+import React from "react"
+import "./style.css";
+const PreviewCV3 = () => {
     return (
-        <React.Fragment>
 
-            {/* <head>
-                <meta charSet="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            
-                
-                <meta name="description" content="CVstrap is another Free minimal CV HTML theme by EvenFly built with Bootstrap 3.3.0. and released under CC-3.0 license." />
-                <meta name="keywords" content="curriculum vitae, cv, one page, onepage, bootstrap, responsive, resume, timeline, free cv" />
-                <meta name="author" content="Mamun Srizon" />
-            
-              
-                <title>CV</title>
-            
-                <link rel="icon" href="img/favicon.png" />
-                <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-ipad-retina.png" />
-                <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-iphone-retina.png" />
-                <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-ipad.png" />
-                <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-iphone.png" />
-            
-              
-                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" />
-                <link rel="stylesheet" href="css/style.css" />
-                <link rel="stylesheet" href="css/responsive.css" />
-            
-                <link href='//fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:300' rel='stylesheet' type='text/css'/>
-                <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
-            
-            
-                
-                    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-                    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-              
-            </head> */}
+        <React.Fragment >
+
+
 
 
             <div className="container">
@@ -53,7 +23,7 @@ const CV1 = () => {
                                 </div>
                                 <div className="col-sm-5 text-right dl-share">
 
-                                    <a className="a2a_dd btn btn-default" href=""><span className="fa fa-share "></span> Share</a>
+
                                     <script type="text/javascript">
                                         var a2a_config = a2a_config || ;
                                         a2a_config.linkname = "Minimal CV by EvenFly";
@@ -63,7 +33,7 @@ const CV1 = () => {
                                     <script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
 
 
-                                    <a className="btn btn-success" href=""><span className="fa fa-download"></span> Download</a>
+
                                 </div>
                             </div>
                             <h2>UI/UX Designer</h2>
@@ -72,12 +42,14 @@ const CV1 = () => {
                         <div className="row">
                             <div className="col-sm-4">
                                 <ul className="list-unstyled">
-                                    <li><a href=""><span className="social fa fa-home"></span>EvenFly.com</a>
-                                    </li>
+
                                     <li><a href=""><span className="social fa fa-skype"></span>+88 0123 45678</a>
                                     </li>
                                     <li><a href="mailto:support@evenfly.com"><span className="social fa fa-envelope-o"></span>me@mail.com</a>
                                     </li>
+                                    <li><a href="mailto:support@evenfly.com"><span className="social fa fa-envelope-o"></span>github.com</a>
+                                    </li>
+
                                 </ul>
                             </div>
 
@@ -92,16 +64,7 @@ const CV1 = () => {
                                 </ul>
                             </div>
 
-                            <div className="col-sm-4">
-                                <ul className="list-unstyled">
-                                    <li><a href=""><span className="social fa fa-behance"></span>Behance</a>
-                                    </li>
-                                    <li><a href=""><span className="social fa fa-dribbble"></span>Dribbble</a>
-                                    </li>
-                                    <li><a href=""><span className="social fa fa-instagram"></span>Instagram</a>
-                                    </li>
-                                </ul>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -121,7 +84,7 @@ const CV1 = () => {
 
                             <p>Consectetur adipisicing elit. Hic labore, unde, ratione, itaque ducimus provident error similique qui, recusandae nam dignissimos autem. Sequi quas quis non, odit assumenda similique neque.</p>
 
-                            <p className="signature">TowkirAhmed</p>
+                           
                         </div>
                     </div>
 
@@ -133,18 +96,18 @@ const CV1 = () => {
                         </div>
 
                         <div className="col-sm-11">
-                            <h3>Education &amp; Certification</h3>
+                            <h3>Education</h3>
 
                             <div className="row">
                                 <div className="col-md-9">
-                                    <h4>MSc in Design &amp; Fine Art</h4>
+                                    <h4>MSc in Design</h4>
                                     <p className="sub"><a href="">Ideal Institute of Science and Technology</a>
                                     </p>
                                     <p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p>
                                 </div>
 
                                 <div className="year col-md-3">
-                                    <p>2009-2011</p>
+                                    <p>2011</p>
                                 </div>
                             </div>
 
@@ -159,24 +122,13 @@ const CV1 = () => {
                                 </div>
 
                                 <div className="year col-md-3">
-                                    <p>2006-2009</p>
+                                    <p>2009</p>
                                 </div>
                             </div>
 
                             <hr />
 
-                            <div className="row">
-                                <div className="col-md-9">
-                                    <h4>Diploma in Graphic Design</h4>
-                                    <p className="sub"><a href="">Ideal Institute of Science and Technology</a>
-                                    </p>
-                                    <p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p>
-                                </div>
-
-                                <div className="year col-md-3">
-                                    <p>2003-2006</p>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
 
@@ -242,6 +194,7 @@ const CV1 = () => {
                         <div className="col-sm-1 col-md-2 mobmid">
                             <span className="secicon fa fa-magic"></span>
                         </div>
+                        <hr />
 
                         <div className="col-sm-11 col-md-10">
                             <h3 className="mobmid">Technical skills </h3>
@@ -249,7 +202,7 @@ const CV1 = () => {
                             <p>Photoshop</p>
                             <div className="progress">
                                 <div className="progress-bar progress-bar-success" role="progressbar" aria-valuenow={65} aria-valuemin={0} aria-valuemax={100} style={{ width: "65%" }}>
-                                    <span className="sr-only">65% Complete (success)</span>
+                                    <span className="sr-only">65% </span>
                                 </div>
                             </div>
 
@@ -257,21 +210,21 @@ const CV1 = () => {
                             <p>Illustrator</p>
                             <div className="progress">
                                 <div className="progress-bar progress-bar-info" role="progressbar" aria-valuenow={80} aria-valuemin={0} aria-valuemax={100} style={{ width: "85%" }}>
-                                    <span className="sr-only">85% Complete</span>
+                                    <span className="sr-only">85% </span>
                                 </div>
                             </div>
 
                             <p>InDesign</p>
                             <div className="progress">
                                 <div className="progress-bar progress-bar-warning" role="progressbar" aria-valuenow={60} aria-valuemin={0} aria-valuemax={100} style={{ width: "60%" }}>
-                                    <span className="sr-only">60% Complete (warning)</span>
+                                    <span className="sr-only">60%</span>
                                 </div>
                             </div>
 
                             <p>Flash</p>
                             <div className="progress">
                                 <div className="progress-bar progress-bar-danger" role="progressbar" aria-valuenow={30} aria-valuemin={0} aria-valuemax={100} style={{ width: "30%" }}>
-                                    <span className="sr-only">30% Complete (danger)</span>
+                                    <span className="sr-only">30% </span>
 
                                 </div>
                             </div>
@@ -310,36 +263,7 @@ const CV1 = () => {
                                 <span className="secicon fa fa-quote-left"></span>
                             </div>
 
-                            <div className="col-sm-11 col-md-10 testimonials">
-                                <h3 className="mobmid">Testimonials </h3>
 
-                                <div className="row">
-                                    <blockquote>
-                                        <p>Sit amet, consectetur adipisicing elit. Fuga quidem ipsum maiores necessitatibus sint, porro temporibus labore, amet officia unde libero eligendi? Porro dolorum itaque, facere harum amet, rem libero.</p>
-                                    </blockquote>
-                                    <img src="img/mushfiq.jpg" alt="" />
-                                    <h4>Mushfiqul Islam</h4>
-                                    <p>The UX Votch</p>
-                                </div>
-
-                                <div className="row">
-                                    <blockquote>
-                                        <p>Consectetur adipisicing elit. Fuga quidem ipsum maiores necessitatibus sint, porro temporibus labore, unde libero eligendi? Porro dolorum itaque, facere harum amet, rem libero.</p>
-                                    </blockquote>
-                                    <img src="img/siblu.jpg" alt="" />
-                                    <h4>E.A. Siblu</h4>
-                                    <p>The Jatir Vobisshot</p>
-                                </div>
-
-                                <div className="row">
-                                    <blockquote>
-                                        <p>Fuga quidem ipsum maiores necessitatibus sint, porro temporibus labore, amet officia unde libero eligendi? Porro dolorum itaque, facere harum amet, rem libero.</p>
-                                    </blockquote>
-                                    <img src="img/nasir.jpg" alt="" />
-                                    <h4>Nasir Uddin</h4>
-                                    <p>The Cute Huzur</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -352,7 +276,7 @@ const CV1 = () => {
             <script src="js/jquery.nicescroll.min.js"></script>
             <script src="js/evenfly.js"></script>
 
-        </React.Fragment>
+        </React.Fragment >
     );
 }
-export default CV1;
+export default PreviewCV3;

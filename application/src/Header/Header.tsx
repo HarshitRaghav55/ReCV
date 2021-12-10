@@ -14,8 +14,8 @@ const Header = () => {
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
                         <ul className="navbar-nav ml-auto">
-                            <li className="nav-item">
-                                {/* <a className="nav-link text-white" href="/Resume">Resume</a> */}
+                            {/* <li className="nav-item">
+                                {/* <a className="nav-link text-white" href="/Resume">Resume</a> 
                                 <Link to = "/Resume" className="nav-link text-white" >Resume</Link>
                             </li>
                             <li className="nav-item">
@@ -23,12 +23,9 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link text-white" href="#">Jobs</a>
-                            </li>
+                            </li> */}
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    About us
-                                </a>
+                                
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><a className="dropdown-item" href="#">Meta</a></li>
                                     <li><a className="dropdown-item" href="#">Instagram</a></li>
